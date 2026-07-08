@@ -1,0 +1,109 @@
+defaults:
+  - _self_
+
+model:
+  model_name: bagel
+  model_path: hf/BAGEL-7B-MoT
+  llm_path: hf/Qwen2.5-0.5B-Instruct/
+  llm_qk_norm: true
+  tie_word_embeddings: false
+  layer_module: Qwen2MoTDecoderLayer
+  vae_path: flux/vae/ae.safetensors
+  vit_path: hf/siglip-so400m-14-980-flash-attn2-navit/
+  max_latent_size: 32
+  latent_patch_size: 2
+  vit_patch_size: 14
+  vit_max_num_patch_per_side: 70
+  connector_act: gelu_pytorch_tanh
+  interpolate_pos: false
+  vit_select_layer: -2
+  vit_rope: false
+  text_cond_dropout_prob: 0.1
+  vae_cond_dropout_prob: 0.3
+  vit_cond_dropout_prob: 0.3
+  grounding_phrase_dropout_prob: 0.8
+
+data:
+  dataset_config_file: conf/data/modus_stage1_16mod.yaml
+  prefetch_factor: 2
+  num_workers: 4
+  max_num_tokens_per_sample: 16384
+  max_num_tokens: 36864
+  prefer_buffer_before: 16384
+  max_buffer_size: 50
+  data_seed: 42
+
+training:
+  visual_gen: true
+  visual_und: true
+
+  results_dir: results
+  checkpoint_dir: results/checkpoints
+
+  wandb_project: bagel
+  wandb_name: run
+  wandb_runid: "0"
+  wandb_resume: allow
+  wandb_offline: false
+  log_rgb_condition_loss_group: false
+
+  global_seed: 4396
+  auto_resume: false
+  resume_from: null
+  resume_model_only: false
+  finetune_from_ema: false
+  finetune_from_hf: false
+  checkpoint_name: ema.special_token_patched.safetensors
+
+  log_every: 10
+  save_every: 2000
+  total_steps: 500000
+
+  warmup_steps: 2000
+  lr_scheduler: constant
+  lr: 1.0e-4
+  min_lr: 1.0e-7
+  beta1: 0.9
+  beta2: 0.95
+  eps: 1.0e-15
+  ema: 0.9999
+  max_grad_norm: 1.0
+
+  timestep_shift: 1.0
+  timestep_sample: logit_norm
+  mode_scale: 0.0
+  timestep_sample_mix_prob: 0.5
+  mse_weight: 1.0
+  ce_weight: 1.0
+  ce_loss_reweighting: false
+  expected_num_tokens: 32768
+
+  num_replicate: 1
+  num_shard: 8
+  sharding_strategy: HYBRID_SHARD
+  backward_prefetch: BACKWARD_PRE
+  cpu_offload: false
+
+  freeze_llm: false
+  freeze_vit: false
+  freeze_vae: true
+  freeze_und: false
+
+  copy_init_moe: true
+  use_flex: false
+
+  use_instruction: false
+  use_condition_instruction: true
+  use_target_instruction: true
+  num_condition_modalities: 0
+
+  do_modality_norm: false
+  use_det_image: false
+  ce_loss_average_over_modalities: false
+
+  modality_config_file: null
+
+  # Online validation. No-op (silent) when validation_pack_path is null
+  # or the file is missing; existing runs need no config change.
+  validation_pack_path: null
+  validate_every: 2000

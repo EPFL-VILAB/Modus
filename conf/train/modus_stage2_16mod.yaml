@@ -1,0 +1,69 @@
+defaults:
+  - pretrain_unified_navit
+  - _self_
+
+# ─────── Model ────────────────────────────────────────────────────────────────
+model:
+  model_name: bagel
+  model_path: models/BAGEL-7B-MoT
+  layer_module: Qwen2MoTDecoderLayer
+  max_latent_size: 64
+
+# ─────── Data ─────────────────────────────────────────────────────────────────
+# 16-mod stage2: 12 stage2 targets + samseg/samedge (image) + cocodet (detection).
+data:
+  dataset_config_file: conf/data/modus_stage2_16mod.yaml
+  max_num_tokens_per_sample: 14336
+  max_num_tokens: 14336
+
+# ─────── Training ─────────────────────────────────────────────────────────────
+training:
+  # Resume from stage1 16mod (cocodet) ckpt. Override via CLI:
+  #   training.resume_from=<stage1_16mod_ckpt_dir>
+  # The real 16-node run loads the SHARDED stage1 ckpt (num_shard=8 matches), and
+  # load_sharded_state_dict pads the +4 REPLACE-start-token vocab rows
+  # (fsdp_utils.py:1104) → no ckpt re-patch needed. (A 1-node smoke that forces
+  # full-state load would need the stage1 model.safetensors re-patched +4, like
+  # the stage1-from-base patch.)
+  resume_from: /path/to/your/MODUS/results_paper/stage1/modus_16mod_stage1_cocodet/checkpoints/0014000
+  finetune_from_hf: true
+  auto_resume: true
+  resume_model_only: true
+  finetune_from_ema: false
+  checkpoint_name: "model.safetensors"
+
+  # 16-mod stage2 modality registry: unrestricted conditions (any2any single-cond),
+  # per-modality image START tokens (REPLACE) + shared end_of_image, samseg/samedge.
+  modality_config_file: conf/modalities/instruction_16mod_stage2.yaml
+  use_instruction: true
+  use_condition_instruction: false
+  # REPLACE: drop the x10 generic target instruction — the per-modality start
+  # tokens disambiguate. (seg/grounding/det category instructions live in
+  # _add_seg/_add_grounding/_add_det, gated by need_loss, so they are PRESERVED.)
+  use_target_instruction: false
+  num_condition_modalities: 1
+
+  # Optimization
+  lr: 2.0e-5
+  total_steps: 50000
+
+  # Logging & checkpointing
+  log_every: 10
+  save_every: 1000
+  wandb_name: "modus_16mod_stage2_from_stage1"
+
+  # FSDP
+  sharding_strategy: HYBRID_SHARD
+  num_shard: 8
+  num_replicate: 8
+
+  # Packing
+  expected_num_tokens: 14336
+
+  # Diffusion
+  timestep_sample: mode
+  mode_scale: 0.0
+
+  # Misc
+  use_det_image: false
+  ce_loss_average_over_modalities: true

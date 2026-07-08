@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Editor / env
+.vscode/
+.DS_Store
+.claude
+.codex
+
+# Logs / caches
+logs/
+cache/
+wandb/
+
+# Model weights / checkpoints (fetched separately, not tracked)
+*.pt
+*.safetensors
+models/
+hf/
+det_seg_checkpoints/
+modality_stats_checkpoints/
+
+# Generated outputs (regeneratable)
+results/
+results_paper/
+val_outputs/
+eval_outputs/
+demo_outputs/
+demo_smoke_out*/
+generated_images_*/
+output*.png
+visualize_*.png
+*_out/
+*_out*/
+chain_*/
+grid_*/
+hero_*/
+*_probe_out/
+*.zip

@@ -1,0 +1,4002 @@
+{
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000000.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000001.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000002.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000003.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000004.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000005.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000006.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000007.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000008.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000009.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000010.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000011.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000012.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000013.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000014.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000015.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000016.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000017.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000018.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000019.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000020.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000021.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000022.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11113
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000023.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000024.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000025.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000026.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000027.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000028.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000029.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000030.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000031.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000032.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000033.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000034.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000035.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000036.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000037.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000038.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000039.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000040.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000041.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000042.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000043.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000044.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000045.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000046.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000047.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000048.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000049.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000050.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000051.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000052.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000053.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000054.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000055.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000056.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000057.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000058.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000059.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000060.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000061.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000062.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000063.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000064.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000065.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000066.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000067.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000068.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000069.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000070.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000071.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000072.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000073.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000074.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000075.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000076.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000077.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000078.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000079.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000080.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000081.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000082.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000083.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000084.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000085.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000086.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000087.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000088.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000089.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000090.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000091.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000092.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000093.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000094.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000095.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000096.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000097.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000098.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000099.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000100.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000101.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000102.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000103.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11111
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000104.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000105.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000106.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000107.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000108.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000109.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000110.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000111.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000112.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000113.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000114.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000115.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000116.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000117.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000118.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000119.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000120.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000121.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000122.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000123.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000124.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000125.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000126.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000127.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000128.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000129.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000130.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000131.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000132.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000133.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000134.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000135.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000136.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000137.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000138.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000139.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000140.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000141.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000142.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000143.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000144.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000145.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000146.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000147.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000148.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000149.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000150.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000151.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000152.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000153.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000154.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000155.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000156.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000157.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000158.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000159.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000160.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000161.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000162.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000163.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000164.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000165.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000166.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000167.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000168.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000169.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000170.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000171.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000172.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000173.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000174.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000175.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000176.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000177.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000178.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000179.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000180.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000181.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000182.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000183.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000184.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000185.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000186.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000187.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000188.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000189.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000190.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000191.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000192.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000193.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000194.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000195.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000196.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000197.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000198.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000199.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000200.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000201.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000202.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000203.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000204.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000205.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000206.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000207.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000208.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000209.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000210.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000211.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000212.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000213.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000214.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000215.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000216.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000217.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000218.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000219.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000220.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000221.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000222.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000223.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000224.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000225.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000226.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000227.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000228.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000229.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000230.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000231.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000232.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000233.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000234.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000235.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000236.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000237.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000238.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11108
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000239.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000240.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000241.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000242.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000243.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000244.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000245.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000246.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000247.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000248.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000249.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000250.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000251.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000252.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000253.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000254.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000255.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000256.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000257.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000258.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000259.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000260.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000261.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000262.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000263.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000264.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000265.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000266.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11110
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000267.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000268.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000269.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000270.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000271.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000272.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000273.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000274.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000275.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000276.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000277.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000278.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000279.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000280.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000281.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000282.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000283.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000284.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000285.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000286.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000287.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000288.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000289.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11146
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000290.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000291.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000292.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000293.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000294.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000295.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000296.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000297.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000298.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000299.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000300.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000301.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000302.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000303.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000304.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000305.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000306.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000307.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000308.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000309.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000310.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000311.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000312.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000313.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000314.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000315.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000316.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000317.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000318.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000319.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000320.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000321.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000322.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000323.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000324.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000325.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000326.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000327.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000328.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000329.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000330.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000331.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000332.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000333.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000334.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000335.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000336.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000337.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000338.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000339.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000340.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000341.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000342.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11146
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000343.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000344.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000345.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000346.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000347.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000348.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000349.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000350.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000351.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000352.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000353.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000354.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000355.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000356.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000357.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000358.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000359.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000360.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000361.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000362.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000363.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000364.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000365.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000366.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000367.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000368.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000369.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000370.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000371.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000372.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000373.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000374.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000375.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000376.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000377.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000378.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000379.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000380.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000381.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000382.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11148
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000383.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000384.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000385.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000386.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000387.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000388.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000389.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11106
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000390.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000391.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000392.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000393.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000394.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000395.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11146
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000396.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000397.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000398.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000399.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000400.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000401.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000402.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000403.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000404.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000405.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000406.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000407.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000408.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000409.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000410.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000411.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000412.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000413.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000414.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000415.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000416.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000417.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000418.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000419.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000420.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000421.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000422.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000423.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000424.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000425.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000426.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000427.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000428.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000429.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000430.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000431.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000432.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000433.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000434.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000435.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000436.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000437.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000438.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000439.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000440.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000441.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000442.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000443.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000444.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000445.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000446.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000447.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000448.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000449.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000450.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000451.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000452.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000453.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000454.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000455.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000456.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000457.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000458.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000459.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000460.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000461.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000462.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000463.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000464.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000465.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000466.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000467.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000468.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000469.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000470.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000471.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000472.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000473.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000474.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000475.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000476.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000477.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000478.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000479.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000480.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000481.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000482.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000483.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000484.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000485.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000486.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000487.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000488.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000489.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000490.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000491.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000492.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000493.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000494.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000495.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000496.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000497.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000498.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000499.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000500.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000501.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000502.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000503.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000504.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000505.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000506.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000507.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000508.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000509.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000510.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000511.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000512.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000513.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000514.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11116
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000515.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000516.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000517.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000518.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000519.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000520.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000521.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000522.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000523.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000524.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000525.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000526.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000527.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000528.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000529.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000530.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000531.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000532.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000533.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000534.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000535.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000536.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000537.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000538.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000539.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000540.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000541.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000542.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000543.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000544.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000545.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000546.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000547.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000548.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000549.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000550.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000551.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000552.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000553.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000554.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000555.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000556.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000557.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000558.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000559.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000560.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000561.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000562.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000563.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000564.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000565.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000566.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000567.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000568.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000569.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000570.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000571.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000572.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000573.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000574.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000575.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000576.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000577.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000578.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000579.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000580.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000581.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000582.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000583.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000584.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000585.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000586.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11112
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000587.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000588.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000589.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000590.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000591.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000592.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000593.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000594.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000595.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000596.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000597.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000598.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000599.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000600.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000601.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000602.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000603.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000604.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000605.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000606.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000607.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000608.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000609.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000610.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000611.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000612.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000613.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000614.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11112
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000615.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000616.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000617.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000618.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000619.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000620.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000621.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000622.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000623.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000624.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000625.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000626.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000627.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000628.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000629.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000630.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000631.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11112
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000632.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000633.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000634.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000635.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000636.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000637.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000638.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000639.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000640.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000641.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000642.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000643.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000644.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11113
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000645.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000646.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000647.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000648.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000649.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000650.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000651.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000652.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000653.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000654.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000655.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000656.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000657.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000658.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000659.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000660.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000661.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000662.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000663.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000664.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000665.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000666.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000667.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000668.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000669.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000670.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000671.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11143
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000672.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000673.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000674.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000675.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000676.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000677.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000678.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000679.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000680.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000681.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000682.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000683.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000684.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000685.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000686.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000687.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000688.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000689.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000690.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000691.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000692.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000693.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000694.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000695.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000696.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000697.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000698.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000699.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000700.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000701.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000702.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000703.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000704.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000705.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000706.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000707.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000708.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000709.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000710.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000711.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000712.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000713.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000714.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000715.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000716.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000717.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000718.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000719.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000720.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000721.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000722.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000723.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000724.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000725.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000726.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000727.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000728.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000729.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000730.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000731.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000732.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11116
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000733.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000734.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000735.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000736.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000737.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000738.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000739.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000740.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000741.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000742.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000743.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000744.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000745.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000746.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000747.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000748.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000749.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000750.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000751.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000752.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000753.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000754.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000755.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000756.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000757.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000758.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000759.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000760.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000761.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000762.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000763.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000764.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000765.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000766.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000767.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000768.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000769.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000770.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000771.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000772.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000773.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000774.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11153
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000775.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11112
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000776.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000777.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000778.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000779.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000780.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000781.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000782.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000783.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000784.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000785.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000786.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000787.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000788.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000789.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000790.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000791.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000792.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000793.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000794.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000795.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000796.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000797.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000798.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000799.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000800.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000801.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000802.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000803.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11141
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000804.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000805.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000806.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000807.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000808.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000809.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000810.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000811.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000812.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000813.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000814.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000815.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000816.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000817.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000818.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000819.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000820.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000821.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000822.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000823.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000824.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000825.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000826.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000827.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000828.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000829.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000830.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000831.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000832.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000833.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000834.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000835.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000836.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000837.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11146
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000838.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000839.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000840.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000841.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000842.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000843.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000844.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000845.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000846.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000847.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000848.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000849.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11116
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000850.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000851.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000852.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000853.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000854.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000855.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000856.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000857.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000858.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000859.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000860.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000861.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000862.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000863.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11146
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000864.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000865.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000866.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000867.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000868.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000869.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000870.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000871.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000872.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000873.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11142
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000874.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000875.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000876.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000877.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000878.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000879.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000880.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000881.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000882.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000883.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000884.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000885.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000886.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000887.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000888.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000889.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000890.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000891.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000892.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11115
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000893.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000894.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000895.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000896.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000897.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000898.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000899.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000900.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000901.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000902.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11118
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000903.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000904.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000905.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000906.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000907.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000908.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000909.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000910.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000911.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000912.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000913.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000914.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000915.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000916.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000917.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000918.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000919.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000920.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000921.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000922.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000923.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11129
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000924.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000925.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000926.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11116
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000927.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000928.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000929.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000930.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000931.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11132
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000932.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000933.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000934.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11117
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000935.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000936.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000937.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000938.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000939.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11128
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000940.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11145
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000941.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000942.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000943.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000944.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000945.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000946.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000947.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000948.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000949.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000950.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000951.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000952.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000953.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11119
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000954.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000955.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11147
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000956.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000957.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11114
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000958.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000959.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000960.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000961.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000962.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11131
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000963.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000964.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000965.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11140
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000966.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11125
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000967.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000968.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000969.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000970.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11138
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000971.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11139
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000972.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11144
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000973.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11121
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000974.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000975.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000976.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000977.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11137
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000978.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000979.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000980.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11120
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000981.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11122
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000982.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000983.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000984.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000985.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11133
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000986.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000987.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11130
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000988.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11135
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000989.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000990.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000991.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11127
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000992.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11136
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000993.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000994.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11123
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000995.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11126
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000996.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000997.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11134
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000998.parquet": {
+    "num_row_groups": 12,
+    "num_rows": 11124
+  },
+  "./datasets/blip3o/parquet_rgb_caption_depth_normal_det_seg_grounding_canny_dino_global_clip448_imagebind/sa_000999.parquet": {
+    "num_row_groups": 11,
+    "num_rows": 10496
+  }
+}

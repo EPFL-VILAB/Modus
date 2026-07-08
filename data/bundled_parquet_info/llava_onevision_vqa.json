@@ -1,0 +1,2450 @@
+{
+ "./datasets/llava_onevision_vqa_parquet/train/ai2d_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2429
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ai2d_gpt4v__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4864
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ai2d_internvl__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ai2d_internvl__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ai2d_internvl__part0002.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2403
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_laion4v__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_vflan4v__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_vflan4v__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_vflan4v__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/allava_instruct_vflan4v__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/aokvqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/aokvqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/aokvqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/aokvqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 8,
+  "num_rows": 1534
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chart2text_cauldron__part0005.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1956
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chartqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chartqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chartqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chartqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 17,
+  "num_rows": 3260
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chrome_writting__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/chrome_writting__part0001.parquet": {
+  "num_row_groups": 20,
+  "num_rows": 3825
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/clevr_cauldron_llava_format__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4995
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/CLEVR-Math_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/CLEVR-Math_MathV360K__part0001.parquet": {
+  "num_row_groups": 2,
+  "num_rows": 280
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/diagram_image_to_text_cauldron__part0000.parquet": {
+  "num_row_groups": 2,
+  "num_rows": 295
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0020.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0021.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0022.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0023.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0024.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0025.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0026.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0027.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0028.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0029.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0030.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0031.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0032.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0033.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0034.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0035.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0036.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0037.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0038.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/dvqa_cauldron_llava_format__part0039.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4995
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/figureqa_cauldron_llava_format__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4995
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/FigureQA_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/FigureQA_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/FigureQA_MathV360K__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/FigureQA_MathV360K__part0003.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2587
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_align__part0012.parquet": {
+  "num_row_groups": 2,
+  "num_rows": 242
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo170k_qa__part0013.parquet": {
+  "num_row_groups": 15,
+  "num_rows": 2823
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geo3k__part0000.parquet": {
+  "num_row_groups": 11,
+  "num_rows": 2091
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/Geometry3K_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/Geometry3K_MathV360K__part0001.parquet": {
+  "num_row_groups": 24,
+  "num_rows": 4724
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geomverse_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/geomverse_cauldron__part0001.parquet": {
+  "num_row_groups": 22,
+  "num_rows": 4298
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/GeoQA_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/GeoQA_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/GeoQA_MathV360K__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/GeoQA_MathV360K__part0003.parquet": {
+  "num_row_groups": 11,
+  "num_rows": 2162
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/GEOS_MathV360K__part0000.parquet": {
+  "num_row_groups": 3,
+  "num_rows": 498
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hateful_memes_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hateful_memes_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 18,
+  "num_rows": 3495
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hitab_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2495
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/hme100k__part0014.parquet": {
+  "num_row_groups": 23,
+  "num_rows": 4492
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iam_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iam_cauldron__part0001.parquet": {
+  "num_row_groups": 4,
+  "num_rows": 658
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iconqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2302
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/IconQA_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/IconQA_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/IconQA_MathV360K__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/IconQA_MathV360K__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/IconQA_MathV360K__part0004.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2589
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/iiit5k__part0000.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/image_textualization_filtered__part0019.parquet": {
+  "num_row_groups": 23,
+  "num_rows": 4573
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/infographic_gpt4v__part0000.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1982
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/infographic_vqa__part0000.parquet": {
+  "num_row_groups": 22,
+  "num_rows": 4394
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/infographic_vqa_llava_format__part0000.parquet": {
+  "num_row_groups": 11,
+  "num_rows": 2113
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/intergps_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 7,
+  "num_rows": 1275
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0020.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0021.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0022.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0023.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0024.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0025.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0026.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0027.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0028.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0029.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0030.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0031.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0032.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0033.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0034.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0035.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0036.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0037.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0038.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0039.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0040.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0041.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0042.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0043.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0044.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0045.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0046.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0047.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0048.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0049.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0050.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/k12_printing__part0051.parquet": {
+  "num_row_groups": 9,
+  "num_rows": 1636
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llavar_gpt4_20k__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llavar_gpt4_20k__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llavar_gpt4_20k__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llavar_gpt4_20k__part0003.parquet": {
+  "num_row_groups": 24,
+  "num_rows": 4790
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_12k_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_12k_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_12k_filtered__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_12k_filtered__part0003.parquet": {
+  "num_row_groups": 1,
+  "num_rows": 124
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/llava_wild_4v_39k_filtered__part0007.parquet": {
+  "num_row_groups": 22,
+  "num_rows": 4362
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/lrv_chart__part0000.parquet": {
+  "num_row_groups": 9,
+  "num_rows": 1776
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/lrv_normal_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/lrv_normal_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/lrv_normal_filtered__part0002.parquet": {
+  "num_row_groups": 3,
+  "num_rows": 490
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mapqa_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2412
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MapQA_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MapQA_MathV360K__part0001.parquet": {
+  "num_row_groups": 2,
+  "num_rows": 225
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_TQA__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_TQA__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_TQA__part0002.parquet": {
+  "num_row_groups": 1,
+  "num_rows": 176
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_VQA-AS__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_VQA-AS__part0001.parquet": {
+  "num_row_groups": 5,
+  "num_rows": 902
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/MathV360K_VQA-RAD__part0000.parquet": {
+  "num_row_groups": 11,
+  "num_rows": 2125
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_metagen__part0017.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2348
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/mavis_math_rule_geo__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/multihiertt_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/multihiertt_cauldron__part0001.parquet": {
+  "num_row_groups": 14,
+  "num_rows": 2614
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/orand_car_a__part0000.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1999
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/PMC-VQA_MathV360K__part0007.parquet": {
+  "num_row_groups": 5,
+  "num_rows": 948
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/raven_cauldron__part0008.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1995
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/rendered_text_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/rendered_text_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4995
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_sqa_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_sqa_cauldron__part0001.parquet": {
+  "num_row_groups": 18,
+  "num_rows": 3509
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wikisql_cauldron__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4984
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/robut_wtq_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 17,
+  "num_rows": 3241
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/scienceqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4971
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/scienceqa_nona_context__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/scienceqa_nona_context__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/scienceqa_nona_context__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/scienceqa_nona_context__part0003.parquet": {
+  "num_row_groups": 22,
+  "num_rows": 4208
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/screen2words_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/screen2words_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/screen2words_cauldron__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/screen2words_cauldron__part0003.parquet": {
+  "num_row_groups": 4,
+  "num_rows": 725
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4o__part0011.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2284
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_coco__part0010.parquet": {
+  "num_row_groups": 1,
+  "num_rows": 17
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_knowledge__part0000.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1988
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_llava__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_sam__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sharegpt4v_sam__part0001.parquet": {
+  "num_row_groups": 20,
+  "num_rows": 3990
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/sroie__part0006.parquet": {
+  "num_row_groups": 19,
+  "num_rows": 3616
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/st_vqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/st_vqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/st_vqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/st_vqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2242
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/Super-CLEVR_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/Super-CLEVR_MathV360K__part0001.parquet": {
+  "num_row_groups": 19,
+  "num_rows": 3642
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tabmwp_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tabmwp_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tabmwp_cauldron__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tabmwp_cauldron__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tabmwp_cauldron__part0004.parquet": {
+  "num_row_groups": 14,
+  "num_rows": 2717
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/TabMWP_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/TabMWP_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/TabMWP_MathV360K__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/TabMWP_MathV360K__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/TabMWP_MathV360K__part0004.parquet": {
+  "num_row_groups": 13,
+  "num_rows": 2452
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tallyqa_cauldron_llava_format__part0019.parquet": {
+  "num_row_groups": 19,
+  "num_rows": 3675
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textcaps__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textcaps__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textcaps__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textcaps__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textcaps__part0004.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1942
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/textocr_gpt4v__part0005.parquet": {
+  "num_row_groups": 1,
+  "num_rows": 104
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/tqa_cauldron_llava_format__part0005.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2302
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/UniGeo_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/UniGeo_MathV360K__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/UniGeo_MathV360K__part0002.parquet": {
+  "num_row_groups": 10,
+  "num_rows": 1949
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_cap__part0018.parquet": {
+  "num_row_groups": 8,
+  "num_rows": 1434
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_ie__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_ie__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_ie__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/ureader_ie__part0003.parquet": {
+  "num_row_groups": 12,
+  "num_rows": 2322
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0020.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0021.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0022.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0023.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0024.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0025.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0026.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0027.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0028.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0029.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0030.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0031.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0032.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0033.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0034.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0035.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0036.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vision_flan_filtered__part0037.parquet": {
+  "num_row_groups": 6,
+  "num_rows": 1060
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vistext_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vistext_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4964
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/visual7w_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/visual7w_cauldron_llava_format__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/visual7w_cauldron_llava_format__part0002.parquet": {
+  "num_row_groups": 22,
+  "num_rows": 4361
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/visualmrc_cauldron__part0000.parquet": {
+  "num_row_groups": 16,
+  "num_rows": 3022
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0002.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0003.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0004.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0005.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0006.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0007.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0008.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0009.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0010.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0011.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0012.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0013.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0014.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0015.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0016.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0017.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0018.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0019.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0020.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0021.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0022.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0023.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0024.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0025.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0026.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0027.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0028.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0029.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0030.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0031.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0032.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0033.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0034.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0035.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0036.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0037.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0038.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0039.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0040.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0041.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0042.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0043.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0044.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0045.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0046.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0047.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0048.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0049.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0050.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0051.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VisualWebInstruct_filtered__part0052.parquet": {
+  "num_row_groups": 18,
+  "num_rows": 3584
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VizWiz_MathV360K__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/VizWiz_MathV360K__part0001.parquet": {
+  "num_row_groups": 9,
+  "num_rows": 1604
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vqarad_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 2,
+  "num_rows": 308
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/vsr_cauldron_llava_format__part0000.parquet": {
+  "num_row_groups": 11,
+  "num_rows": 2152
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/websight_cauldron__part0000.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 5000
+ },
+ "./datasets/llava_onevision_vqa_parquet/train/websight_cauldron__part0001.parquet": {
+  "num_row_groups": 25,
+  "num_rows": 4995
+ }
+}

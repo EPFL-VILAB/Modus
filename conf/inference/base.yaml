@@ -1,0 +1,51 @@
+# Base inference configuration.
+#
+# Model-loading defaults and generation hyperparameters.
+# Task routing (condition → target) is specified via CLI flags:
+#
+#   python infer.py --condition rgb --target depth checkpoint_path=...
+#   python infer.py --condition caption --target image --intermediate depth checkpoint_path=...
+
+# ─────── Model Loading ─────────────────────────────────────────────────────────
+format: training   # hf | training
+model_path: ${oc.env:BAGEL_MODEL_PATH,models/BAGEL-7B-MoT}
+checkpoint_path: null
+use_ema: false
+init_on_gpu: true
+model_name: bagel_from_json
+
+# ─────── Modality Config ───────────────────────────────────────────────────────
+# Single source of truth for per-modality definitions (tokens, pos-embeds,
+# conditions, inference decode method, external tokenizers, CFG scales).
+modality_config: conf/modalities/instruction_16mod_stage2.yaml
+
+# ─────── Task I/O ─────────────────────────────────────────────────────────────
+prompt: ""
+input_image: null
+input_video_path: null
+output_dir: demo_outputs
+
+# ─────── Generation Hyperparams ────────────────────────────────────────────────
+seed: 0
+cfg_text_scale: 4.0
+cfg_img_scale: 2.0
+num_timesteps: 50
+temperature: 0.003
+do_sample: false
+
+# ─────── Codebook / Understanding Hyperparams ─────────────────────────────────
+# These control autoregressive codebook token generation (dino, clip, imagebind).
+# Only effective when do_sample=true (greedy decoding ignores temperature/top_k/top_p).
+text_temperature: 0.95
+top_k: 0
+top_p: 1.0
+
+# ─────── Instruction Prompts ───────────────────────────────────────────────────
+use_instruction: true
+use_target_instruction: true
+use_condition_instruction: false
+use_intermediate_instruction: true
+
+# ─────── Misc ──────────────────────────────────────────────────────────────────
+do_modality_norm: false
+use_det_image: false

@@ -1,0 +1,272 @@
+modalities:
+  - name: text
+    id: 0
+    kind: text
+    start_token_key: bos_token_id
+    end_token_key: eos_token_id
+    inference_add_instruction: false   # stage2/3 trained with use_target_instruction=false (no generic instr)
+
+  - name: caption
+    id: 1
+    kind: text
+    start_token_key: bos_token_id
+    end_token_key: eos_token_id
+    represent_vae: true
+    inference_add_instruction: false   # any2caption (stage2) trained without a target instruction
+
+  - name: rgb
+    id: 2
+    kind: image
+    start_token_key: start_of_image
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false   # generic [start X] not trained in stage2/3 (use_target_instruction=false)
+
+  - name: depth
+    id: 3
+    kind: image
+    start_token_key: start_of_depth     # REPLACE: per-modality start (token already exists in base vocab)
+    start_token: "<|depth_start|>"
+    end_token_key: end_of_image          # shared end (image end is a structural terminator)
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false
+
+  - name: normal
+    id: 4
+    kind: image
+    start_token_key: start_of_normal    # REPLACE: per-modality start (token already exists in base vocab)
+    start_token: "<|normal_start|>"
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false
+
+  - name: det
+    id: 5
+    kind: codebook
+    start_token_key: start_of_det
+    end_token_key: end_of_det
+    represent_vae: true
+    # NOTE: det's learnable pos_embed (grounding_pos_embed, size 4) is REMOVED here.
+    # The forward pos_embed loop is keyed by token-id range, and cocodet reuses
+    # det's x1/y1/x2/y2 tokens; with the pos_embed on, a multi-box cocodet sample
+    # (>4 coord tokens) would index the size-4 embedding out of bounds. det is not
+    # trained in modus (only present for coord-token-id alignment), so dropping its
+    # pos_embed is safe. reweight also removed (no reweight for det/cocodet).
+    start_token: "<|det_start|>"
+    end_token: "<|det_end|>"
+    extra_tokens: ["<|box_start|>", "<|box_end|>"]
+    code_token_groups:
+      - token_format: "<|x1_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|y1_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|x2_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|y2_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|score_{i:02d}|>"
+        start: 0
+        end: 99
+    # Inference pipeline config
+    inference_decode_method: detection
+    inference_max_tokens: 1000
+    inference_cfg_uncond: text
+    inference_add_instruction: false   # det uses start_of_det token, not text instruction
+
+  - name: seg
+    id: 6
+    kind: image
+    start_token_key: start_of_seg       # REPLACE: per-modality start (NEW token)
+    start_token: "<|seg_start|>"
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+
+  - name: canny
+    id: 7
+    kind: image
+    start_token_key: start_of_canny     # REPLACE: per-modality start (NEW token)
+    start_token: "<|canny_start|>"
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false
+
+  - name: dino
+    id: 8
+    kind: codebook
+    start_token_key: start_of_dino
+    end_token_key: end_of_dino
+    pos_embed_size: 16
+    apply_pos_embed_in_forward: true
+    represent_vae: true
+    start_token: "<|dino_start|>"
+    end_token: "<|dino_end|>"
+    code_vocab_size: 8192
+    code_token_format: "<|dino_{i:04d}|>"
+    external_tokenizer_kind: vqvae
+    external_tokenizer_repo: "EPFL-VILAB/4M_tokenizers_DINOv2-B14-global_8k_16_224"
+    # Inference pipeline config
+    inference_decode_method: dino
+    inference_max_tokens: 17
+    inference_cfg_uncond: img
+    inference_cfg_img_scale: 1.0
+    inference_add_instruction: false   # start_of_dino token triggers it; generic instr not in stage2/3
+
+  - name: dinolocal
+    id: 9
+    kind: codebook
+    start_token_key: start_of_dinolocal
+    end_token_key: end_of_dinolocal
+    pos_embed_size: 1024
+    apply_pos_embed_in_forward: true
+    represent_vae: true
+    codebook_spatial_shape: [32, 32]   # 1024 tokens, 32×32 grid → 2D RoPE
+    start_token: "<|dinolocal_start|>"
+    end_token: "<|dinolocal_end|>"
+    code_vocab_size: 8192
+    code_token_format: "<|dinolocal_{i:04d}|>"
+    external_tokenizer_kind: vqvae
+    external_tokenizer_repo: "EPFL-VILAB/4M_tokenizers_DINOv2-B14_8k_224-448"
+    # Inference pipeline config
+    inference_decode_method: dinolocal
+    inference_max_tokens: 1025
+    inference_cfg_uncond: img
+    inference_cfg_img_scale: 1.0
+    inference_add_instruction: false
+
+  - name: clip
+    id: 10
+    kind: codebook
+    start_token_key: start_of_clip
+    end_token_key: end_of_clip
+    pos_embed_size: 784
+    apply_pos_embed_in_forward: true
+    represent_vae: true
+    codebook_spatial_shape: [28, 28]   # 784 tokens, 28×28 grid → 2D RoPE
+    start_token: "<|clip_start|>"
+    end_token: "<|clip_end|>"
+    code_vocab_size: 8192
+    code_token_format: "<|clip_{i:04d}|>"
+    external_tokenizer_kind: vqvae
+    external_tokenizer_repo: "EPFL-VILAB/4M_tokenizers_CLIP-B16_8k_224-448"
+    # Inference pipeline config
+    inference_decode_method: clip
+    inference_max_tokens: 785
+    inference_cfg_uncond: img
+    inference_cfg_img_scale: 1.0
+    inference_add_instruction: false
+
+  - name: imagebind
+    id: 11
+    kind: codebook
+    start_token_key: start_of_imagebind
+    end_token_key: end_of_imagebind
+    pos_embed_size: 16
+    apply_pos_embed_in_forward: true
+    represent_vae: true
+    start_token: "<|imagebind_start|>"
+    end_token: "<|imagebind_end|>"
+    code_vocab_size: 8192
+    code_token_format: "<|imagebind_{i:04d}|>"
+    external_tokenizer_kind: vqvae
+    external_tokenizer_repo: "EPFL-VILAB/4M_tokenizers_ImageBind-H14-global_8k_16_224"
+    # Inference pipeline config
+    inference_decode_method: imagebind
+    inference_max_tokens: 17
+    inference_cfg_uncond: img
+    inference_cfg_img_scale: 1.0
+    inference_add_instruction: false
+
+  - name: imagebindlocal
+    id: 12
+    kind: codebook
+    start_token_key: start_of_imagebindlocal
+    end_token_key: end_of_imagebindlocal
+    pos_embed_size: 1024
+    apply_pos_embed_in_forward: true
+    represent_vae: true
+    codebook_spatial_shape: [32, 32]   # 1024 tokens, 32×32 grid → 2D RoPE
+    start_token: "<|imagebindlocal_start|>"
+    end_token: "<|imagebindlocal_end|>"
+    code_vocab_size: 8192
+    code_token_format: "<|imagebindlocal_{i:04d}|>"
+    external_tokenizer_kind: vqvae
+    external_tokenizer_repo: "EPFL-VILAB/4M_tokenizers_ImageBind-H14_8k_224-448"
+    # Inference pipeline config
+    inference_decode_method: imagebindlocal
+    inference_max_tokens: 1025
+    inference_cfg_uncond: img
+    inference_cfg_img_scale: 1.0
+    inference_add_instruction: false
+
+  # ── NEW: cocodet (Pix2seq detection). stage1 = rgb→cocodet only.
+  # Coords reuse det's x1/y1/x2/y2 tokens (dedup, 0 new); class = COCO-id-aligned
+  # tokens (~91 new). dispersed_code_tokens → CE is gathered over the
+  # non-contiguous {coords ∪ class ∪ end} set, not a contiguous range.
+  # No reweight, no learnable pos_embed (RoPE + token-id carry order/role).
+  - name: cocodet
+    id: 13
+    kind: codebook
+    start_token_key: start_of_cocodet
+    end_token_key: end_of_cocodet
+    start_token: "<|cocodet_start|>"
+    end_token: "<|cocodet_end|>"
+    represent_vae: true
+    dispersed_code_tokens: true
+    code_token_groups:
+      - token_format: "<|x1_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|y1_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|x2_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|y2_{i:03d}|>"
+        start: 0
+        end: 999
+      - token_format: "<|coco_cls_{i:02d}|>"
+        start: 0
+        end: 90
+    # Inference pipeline config.
+    # decode_method is 'cocodet' (NOT 'detection') — cocodet's output is
+    # coords+class per box ending on cocodet_end, a DIFFERENT format from the
+    # grounding/det coords-only decode (generate_detection_coordonly). Handled by
+    # the dedicated model.generate_cocodet + inferencer.gen_cocodet (which do NOT
+    # touch the grounding decode).
+    inference_decode_method: cocodet
+    inference_max_tokens: 1000
+    inference_cfg_uncond: text
+    inference_add_instruction: false
+
+  # ── NEW image modalities (stage2): SAM segmentation / edge. Mirror seg/canny
+  # (direct-PNG image, VIT+VAE, MSE). REPLACE: per-modality start token, shared
+  # end_of_image. These start tokens are NEW (created via start_token field).
+  - name: samseg
+    id: 14
+    kind: image
+    start_token_key: start_of_samseg
+    start_token: "<|samseg_start|>"
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false
+
+  - name: samedge
+    id: 15
+    kind: image
+    start_token_key: start_of_samedge
+    start_token: "<|samedge_start|>"
+    end_token_key: end_of_image
+    represent_vit: true
+    represent_vae: true
+    inference_add_instruction: false

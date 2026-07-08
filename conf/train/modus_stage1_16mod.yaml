@@ -1,0 +1,66 @@
+defaults:
+  - pretrain_unified_navit
+  - _self_
+
+# ─────── Model ────────────────────────────────────────────────────────────────
+model:
+  model_name: bagel
+  model_path: models/BAGEL-7B-MoT
+  layer_module: Qwen2MoTDecoderLayer
+  max_latent_size: 64
+
+# ─────── Data ─────────────────────────────────────────────────────────────────
+data:
+  dataset_config_file: conf/data/modus_stage1_16mod.yaml
+  max_num_tokens_per_sample: 14336
+  max_num_tokens: 14336
+
+# ─────── Training ─────────────────────────────────────────────────────────────
+training:
+  # Resume & checkpoint. Base ckpt has the 13-mod tokens; cocodet's ~93 new
+  # tokens are appended at the vocab tail and resize-initialized from base.
+  resume_from: models/BAGEL-7B-MoT
+  finetune_from_hf: true
+  auto_resume: true
+  resume_model_only: true
+  finetune_from_ema: true
+  # cocodet+samseg+samedge patched base ckpt: the cocodet ckpt with +4 mean-init
+  # rows for samseg/samedge's new start tokens, so embed = 196840 = the stage2
+  # modality config's vocab. ALL three stages must build the SAME vocab (196840),
+  # otherwise the chained stage1->stage2 resume fails on an embed_tokens size
+  # mismatch (196836 vs 196840). See scripts/patch_ckpt_add_tokens.py.
+  checkpoint_name: "ema.special_token_patched.det_seg_random_init.canny_dino.dinolocal.clip_imagebind.cocodet.samseg_samedge.safetensors"
+
+  # Use the STAGE2 16-mod registry (16 modalities, vocab 196840) for stage1 too,
+  # so stage1 SAVES 196840 and stage2/stage3 can resume it. stage1 just doesn't
+  # sample samseg/samedge in its data; their token rows stay at init until stage2.
+  modality_config_file: conf/modalities/instruction_16mod_stage2.yaml
+  use_instruction: true
+  use_condition_instruction: false
+  use_target_instruction: true
+  num_condition_modalities: 1
+
+  # Optimization
+  lr: 2.0e-5
+  total_steps: 50000
+
+  # Logging & checkpointing
+  log_every: 10
+  save_every: 1000
+  wandb_name: "modus_16mod_stage1_cocodet"
+
+  # FSDP
+  sharding_strategy: HYBRID_SHARD
+  num_shard: 8
+  num_replicate: 8
+
+  # Packing
+  expected_num_tokens: 14336
+
+  # Diffusion
+  timestep_sample: mode
+  mode_scale: 0.0
+
+  # Misc
+  use_det_image: false
+  ce_loss_average_over_modalities: true

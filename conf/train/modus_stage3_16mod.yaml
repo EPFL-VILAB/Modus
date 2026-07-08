@@ -1,0 +1,58 @@
+defaults:
+  - pretrain_unified_navit
+  - _self_
+
+# Stage 3 (16mod): unrestricted any-to-any with up to three conditioning
+# modalities, resumed from the 16mod stage-2 checkpoint.
+model:
+  model_name: bagel
+  model_path: models/BAGEL-7B-MoT
+  layer_module: Qwen2MoTDecoderLayer
+  max_latent_size: 64
+
+data:
+  dataset_config_file: conf/data/modus_stage2_16mod.yaml
+  max_num_tokens_per_sample: 16384
+  max_num_tokens: 16384
+
+training:
+  # CSCS default — OVERRIDE on Bolt with training.resume_from=<your 16mod stage2 ckpt>.
+  resume_from: /path/to/your/MODUS/results_paper/stage2/modus_16mod_stage2_from_stage1/checkpoints/0020000
+  finetune_from_hf: true
+  auto_resume: true
+  resume_model_only: true
+  finetune_from_ema: false
+  checkpoint_name: "model.safetensors"
+
+  # Same 16-mod vocab as stage 1/2 (incl. the cocodet tokens) so the stage-2
+  # checkpoint loads. Conditioning is set below, not by the modality config:
+  # num=3 + strict=false means "sample 1..3 conditions, up to 3".
+  modality_config_file: conf/modalities/instruction_16mod_stage2.yaml
+  use_instruction: true
+  use_condition_instruction: false
+  # FALSE by design (matches stage 2): no generic [start X x10] target
+  # instruction. seg/grounding/det keep their own specific instructions
+  # (phrase/category), independent of this flag. Must stay false so cocodet is
+  # not given a target instruction it was never trained with.
+  use_target_instruction: false
+  num_condition_modalities: 3
+  strict_num_condition_modalities: false
+
+  lr: 2.0e-5
+  total_steps: 50000
+
+  log_every: 10
+  save_every: 1000
+  wandb_name: "modus_16modality_stage3_from_stage2"
+
+  sharding_strategy: HYBRID_SHARD
+  num_shard: 8
+  num_replicate: 8
+
+  expected_num_tokens: 16384
+
+  timestep_sample: mode
+  mode_scale: 0.0
+
+  use_det_image: false
+  ce_loss_average_over_modalities: true

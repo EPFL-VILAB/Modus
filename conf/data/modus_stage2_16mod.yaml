@@ -1,0 +1,437 @@
+# Stage 2 data config for the 13-modality extension.
+# Based on modus_stage2_dinolocal.yaml (10mod) + 3 new any2{clip,imagebind,imagebindlocal} sections.
+
+unified_any2rgb:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+
+# Total samples across all vlm_sft subsets: 3,938,627.
+vlm_sft:
+  dataset_names:
+  - ai2d(cauldron,llava_format)
+  - ai2d(gpt4v)
+  - ai2d(internvl)
+  - allava_instruct_laion4v
+  - allava_instruct_vflan4v
+  - aokvqa(cauldron,llava_format)
+  - chart2text(cauldron)
+  - chartqa(cauldron,llava_format)
+  - chrome_writting
+  - clevr(cauldron,llava_format)
+  - CLEVR-Math(MathV360K)
+  - diagram_image_to_text(cauldron)
+  - dvqa(cauldron,llava_format)
+  - figureqa(cauldron,llava_format)
+  - FigureQA(MathV360K)
+  - geo170k(align)
+  - geo170k(qa)
+  - geo3k
+  - Geometry3K(MathV360K)
+  - geomverse(cauldron)
+  - GeoQA+(MathV360K)
+  - GEOS(MathV360K)
+  - hateful_memes(cauldron,llava_format)
+  - hitab(cauldron,llava_format)
+  - hme100k
+  - iam(cauldron)
+  - iconqa(cauldron,llava_format)
+  - IconQA(MathV360K)
+  - iiit5k
+  - image_textualization(filtered)
+  - infographic(gpt4v)
+  - infographic_vqa
+  - infographic_vqa_llava_format
+  - intergps(cauldron,llava_format)
+  - k12_printing
+  - llavar_gpt4_20k
+  - llava_wild_4v_12k_filtered
+  - llava_wild_4v_39k_filtered
+  - lrv_chart
+  - lrv_normal(filtered)
+  - mapqa(cauldron,llava_format)
+  - MapQA(MathV360K)
+  - MathV360K_TQA
+  - MathV360K_VQA-AS
+  - MathV360K_VQA-RAD
+  - mavis_math_metagen
+  - mavis_math_rule_geo
+  - multihiertt(cauldron)
+  - orand_car_a
+  - PMC-VQA(MathV360K)
+  - raven(cauldron)
+  - rendered_text(cauldron)
+  - robut_sqa(cauldron)
+  - robut_wikisql(cauldron)
+  - robut_wtq(cauldron,llava_format)
+  - scienceqa(cauldron,llava_format)
+  - scienceqa(nona_context)
+  - screen2words(cauldron)
+  - sharegpt4o
+  - sharegpt4v(coco)
+  - sharegpt4v(knowledge)
+  - sharegpt4v(llava)
+  - sharegpt4v(sam)
+  - sroie
+  - st_vqa(cauldron,llava_format)
+  - Super-CLEVR(MathV360K)
+  - tabmwp(cauldron)
+  - TabMWP(MathV360K)
+  - tallyqa(cauldron,llava_format)
+  - textcaps
+  - textocr(gpt4v)
+  - tqa(cauldron,llava_format)
+  - UniGeo(MathV360K)
+  - ureader_cap
+  - ureader_ie
+  - vision_flan(filtered)
+  - vistext(cauldron)
+  - visual7w(cauldron,llava_format)
+  - visualmrc(cauldron)
+  - VisualWebInstruct(filtered)
+  - VizWiz(MathV360K)
+  - vqarad(cauldron,llava_format)
+  - vsr(cauldron,llava_format)
+  - websight(cauldron)
+  image_transform_args:
+    image_stride: 14
+    max_image_size: 980
+    min_image_size: 378
+    max_pixels: 2_007_040
+  frame_sampler_args:
+    max_num_frames: 12
+    min_num_frames: 8
+  is_mandatory: false
+  shuffle_lines: True
+  shuffle_seed: 0
+  num_used_data:
+  - 2429
+  - 4864
+  - 12403
+  - 49990
+  - 19990
+  - 16534
+  - 26956
+  - 18260
+  - 8825
+  - 69995
+  - 5280
+  - 295
+  - 199995
+  - 99995
+  - 17587
+  - 60242
+  - 67823
+  - 2091
+  - 9724
+  - 9298
+  - 17162
+  - 498
+  - 8495
+  - 2495
+  - 74492
+  - 5658
+  - 27302
+  - 22589
+  - 1990
+  - 99573
+  - 1982
+  - 4394
+  - 2113
+  - 1275
+  - 256636
+  - 19790
+  - 15124
+  - 39362
+  - 1776
+  - 10490
+  - 37412
+  - 5225
+  - 10176
+  - 5902
+  - 2125
+  - 87348
+  - 99990
+  - 7614
+  - 1999
+  - 35948
+  - 41995
+  - 9995
+  - 8509
+  - 74984
+  - 38241
+  - 4971
+  - 19208
+  - 15725
+  - 57284
+  - 50017
+  - 1988
+  - 29990
+  - 8990
+  - 33616
+  - 17242
+  - 8642
+  - 22717
+  - 22452
+  - 98675
+  - 21942
+  - 25104
+  - 27302
+  - 11949
+  - 91434
+  - 17322
+  - 186060
+  - 9964
+  - 14361
+  - 3022
+  - 263584
+  - 6604
+  - 308
+  - 2152
+  - 9995
+  # 5 text-only subsets (Evol-Instruct/magpie_pro x3/mathqa) are
+  # excluded from dataset_names; their stale quotas were removed
+  # here too (they previously shifted every later subset's quota).
+  weight: 1
+
+
+unified_any2grounding:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 1000
+  weight: 1
+
+unified_any2dino:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2dinolocal:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2caption:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2depth:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2normal:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2seg:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2canny:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+# ── additional any2X target groups ──
+unified_any2clip:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2imagebind:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2imagebindlocal:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+# ── NEW stage2 targets: samseg / samedge (image) + cocodet (detection).
+# All is_mandatory:false (matches the stage2 convention); since EVERY group is
+# non-mandatory, cocodet is sampled by weight and not starved (unlike the
+# all-mandatory stage1 case).
+unified_any2samseg:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2samedge:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
+
+unified_any2cocodet:
+  dataset_names:
+  - blip3o_rgb_caption_depth_normal_det_seg_grounding_canny_dino_clip448_imagebind_samseg_samedge_cocodet
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 518
+    min_image_size: 224
+  is_mandatory: false
+  num_used_data:
+  - 2888
+  weight: 1
