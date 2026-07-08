@@ -136,6 +136,13 @@ def main():
 
     fmt = cfg["format"]
 
+    # The released MODUS checkpoint is a self-contained snapshot (weights + config +
+    # tokenizer + VAE in one dir). When only checkpoint_path is given (and
+    # BAGEL_MODEL_PATH is not pointed elsewhere), reuse it as model_path so that
+    # `python infer.py ... checkpoint_path=<dir>` works without a second env var.
+    if fmt == "training" and cfg.get("checkpoint_path") and not os.environ.get("BAGEL_MODEL_PATH"):
+        cfg["model_path"] = cfg["checkpoint_path"]
+
     # ── Load MODUS any2any model ──────────────────────────────────────────
     modality_config_path = resolve_path(cfg["modality_config"])
 
