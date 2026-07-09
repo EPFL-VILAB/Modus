@@ -5,7 +5,7 @@
 [Paper](https://storage.googleapis.com/multimodal_modus/static/modus_paper.pdf) &nbsp;·&nbsp;
 [Project page](https://modus-multimodal.epfl.ch/) &nbsp;·&nbsp;
 [Dataset](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality) &nbsp;·&nbsp;
-[Model weights](https://huggingface.co/mqye/modus-16mod-stage3) &nbsp;·&nbsp;
+[Model weights](https://huggingface.co/EPFL-VILAB/MODUS) &nbsp;·&nbsp;
 ICML 2026
 
 Mingqiao Ye¹\*, Zhaochong An¹ ³\*, Zhitong Gao¹, Xian Liu⁴, François Fleuret⁵, Chuan Li⁶, Amir Zadeh⁶, Serge Belongie³, Afshin Dehghan², Jesse Allardice²†, David Mizrahi²†, Oğuzhan Fatih Kar¹ ²†, Roman Bachmann¹ ²†, Amir Zamir¹
@@ -94,19 +94,13 @@ Core dependencies are `torch==2.5.1` and `transformers==4.49.0` (see `requiremen
 
 ## Model weights
 
-The 16-modality stage-3 checkpoint is released at
-[`mqye/modus-16mod-stage3`](https://huggingface.co/mqye/modus-16mod-stage3) — a
-**self-contained** snapshot (trained bf16 `model.safetensors` + architecture config +
-tokenizer + VAE `ae.safetensors`), so the same directory serves as both
-`checkpoint_path` and `BAGEL_MODEL_PATH`; no separate BAGEL-7B-MoT download is needed.
+The model is one self-contained folder — download it once:
 
 ```bash
-huggingface-cli download mqye/modus-16mod-stage3 --local-dir models/modus-16mod-stage3
+huggingface-cli download EPFL-VILAB/MODUS --local-dir models/modus
 ```
 
-This checkpoint was trained **instruction-free**, so pass `use_instruction=false` at
-inference (see the model card). It is derived from the base
-[`BAGEL-7B-MoT`](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT) weights.
+Pass that folder as `checkpoint_path` in any command below.
 
 ## Inference
 
@@ -115,19 +109,19 @@ The unified CLI takes a source modality (`--condition`), a target (`--target`), 
 ```bash
 # RGB to depth
 python infer.py --condition rgb --target depth \
-    checkpoint_path=models/modus-16mod-stage3 input_image=test_images/01_basil_cathedral.jpg
+    checkpoint_path=models/modus input_image=test_images/01_basil_cathedral.jpg
 
 # RGB to DINOv2 local feature map
 python infer.py --condition rgb --target dinolocal \
-    checkpoint_path=models/modus-16mod-stage3 input_image=test_images/01_basil_cathedral.jpg
+    checkpoint_path=models/modus input_image=test_images/01_basil_cathedral.jpg
 
 # Caption to image
 python infer.py --condition caption --target image \
-    checkpoint_path=models/modus-16mod-stage3 prompt="a red double-decker bus in front of a clock tower"
+    checkpoint_path=models/modus prompt="a red double-decker bus in front of a clock tower"
 
 # Chained: caption to depth to image (feed the generated depth back in)
 python infer.py --condition caption --target image --intermediate depth \
-    checkpoint_path=models/modus-16mod-stage3 prompt="a red double-decker bus in front of a clock tower"
+    checkpoint_path=models/modus prompt="a red double-decker bus in front of a clock tower"
 ```
 
 `scripts/inference.sh` is a thin wrapper over the same CLI with usage examples for every task (any-to-any and chained).
@@ -137,8 +131,8 @@ python infer.py --condition caption --target image --intermediate depth \
 A Gradio app exposes three tabs: any-to-any, chained prediction, and representation analysis.
 
 ```bash
-export MODUS_DEMO_CHECKPOINT=models/modus-16mod-stage3   # required (self-contained snapshot)
-export BAGEL_MODEL_PATH=models/modus-16mod-stage3        # same dir: config + tokenizer + VAE
+export MODUS_DEMO_CHECKPOINT=models/modus   # the downloaded model folder
+export BAGEL_MODEL_PATH=models/modus
 python demo_modus.py --port 7860
 ```
 

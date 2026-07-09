@@ -41,10 +41,12 @@ top_k: 0
 top_p: 1.0
 
 # ─────── Instruction Prompts ───────────────────────────────────────────────────
-use_instruction: true
-use_target_instruction: true
+# The released checkpoint is trained instruction-free, so these default to false
+# and the inference examples work as-is.
+use_instruction: false
+use_target_instruction: false
 use_condition_instruction: false
-use_intermediate_instruction: true
+use_intermediate_instruction: false
 
 # ─────── Misc ──────────────────────────────────────────────────────────────────
 do_modality_norm: false
