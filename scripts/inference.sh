@@ -23,7 +23,7 @@
 #   bash scripts/inference.sh /path/to/ckpt --condition rgb --target seg \
 #       input_image=test_images/01_basil_cathedral.jpg
 #
-#   # RGB → Normal
+#   # RGB → Surface normals
 #   bash scripts/inference.sh /path/to/ckpt --condition rgb --target normal \
 #       input_image=test_images/01_basil_cathedral.jpg
 #

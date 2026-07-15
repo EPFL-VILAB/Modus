@@ -95,6 +95,38 @@ BRIDGE_MODALITIES = ["rgb", "depth", "normal", "seg", "canny", "caption"]
 # Conditions that are provided as free text rather than an image.
 TEXT_CONDITIONS = {"caption", "text"}
 
+# Human-readable labels for the modality codenames. Shown everywhere in the UI;
+# the underlying dropdown/checkbox VALUE stays the codename (via (label, value)
+# tuples), so nothing downstream changes.
+DISPLAY_NAMES = {
+    "rgb": "RGB image",
+    "caption": "Caption (text)",
+    "text": "Text",
+    "depth": "Depth",
+    "normal": "Surface normals",
+    "canny": "Canny edges",
+    "seg": "Semantic segmentation",
+    "samseg": "SAM segmentation",
+    "samedge": "SAM edge",
+    "cocodet": "Object detection (COCO)",
+    "det": "Grounding boxes",
+    "dino": "DINOv2 features",
+    "dinolocal": "DINOv2 patch features",
+    "clip": "CLIP features",
+    "imagebind": "ImageBind features",
+    "imagebindlocal": "ImageBind patch features",
+}
+
+
+def _label(code: str) -> str:
+    """Human-readable label for a modality codename."""
+    return DISPLAY_NAMES.get(code, code)
+
+
+def _labeled(codes: List[str]) -> List[Tuple[str, str]]:
+    """[(display_label, codename), ...] for gradio dropdown/checkbox choices."""
+    return [(_label(c), c) for c in codes]
+
 
 def _resolve_path(p: Optional[str]) -> Optional[str]:
     if not p:
@@ -527,16 +559,35 @@ def _example_images() -> List[str]:
     ]
 
 
-def _example_rows() -> List[List[str]]:
-    """[[image_path, seg_category, precomputed_seg_path], ...] — selecting a row fills
-    the condition image, its bound seg category, AND shows the offline-precomputed
-    segmentation for that image+category (no GPU needed)."""
+# Modalities shown in the offline precompute grid for each example image, in
+# order. Each is stored next to the example as ``<stem>_<modality>.jpg``.
+PRECOMPUTE_GRID_MODALITIES = [
+    "depth", "normal", "seg", "canny", "cocodet",
+    "dinolocal", "clip", "imagebind",
+]
+
+
+def _precompute_grid_for(image_path: str) -> List[Tuple[str, str]]:
+    """[(precomputed_image_path, display_label), ...] of the offline RGB→X previews
+    that sit next to *image_path* as ``<stem>_<modality>.jpg``. Zero GPU — this is
+    a static preview of what the model produces for this example image."""
+    stem, _ext = os.path.splitext(image_path)
+    grid = []
+    for mod in PRECOMPUTE_GRID_MODALITIES:
+        prev = f"{stem}_{mod}.jpg"
+        if os.path.exists(prev):
+            grid.append((prev, _label(mod)))
+    return grid
+
+
+def _example_rows() -> List[List[Any]]:
+    """[[image_path, seg_category, precompute_grid], ...] — selecting a row fills the
+    input image, its bound seg category, AND shows the offline-precomputed grid of
+    every modality for that image (no GPU needed)."""
     rows = []
     for p in _example_images():
         cat = _EXAMPLE_SEG_CATEGORY.get(os.path.basename(p), "person")
-        stem, _ext = os.path.splitext(p)
-        seg_prev = f"{stem}_seg.jpg"
-        rows.append([p, cat, seg_prev if os.path.exists(seg_prev) else None])
+        rows.append([p, cat, _precompute_grid_for(p)])
     return rows
 
 
@@ -547,12 +598,26 @@ def _advanced_controls():
             seed = gr.Number(value=0, label="Seed", precision=0)
             randomize = gr.Checkbox(value=False, label="Randomize seed")
         with gr.Row():
-            cfg_text = gr.Slider(0.0, 10.0, value=4.0, step=0.5, label="cfg_text_scale")
-            cfg_img = gr.Slider(0.0, 10.0, value=2.0, step=0.5, label="cfg_img_scale")
+            cfg_text = gr.Slider(
+                0.0, 10.0, value=4.0, step=0.5, label="Text guidance strength",
+                info="How strongly to follow the text/caption condition (classifier-free "
+                     "guidance, cfg_text_scale). Higher = more faithful to the text.")
+            cfg_img = gr.Slider(
+                0.0, 10.0, value=2.0, step=0.5, label="Image guidance strength",
+                info="How strongly to follow the input image condition (classifier-free "
+                     "guidance, cfg_img_scale). Higher = more faithful to the input image.")
         with gr.Row():
-            num_timesteps = gr.Slider(10, 100, value=30, step=5, label="num_timesteps")
-            top_p = gr.Slider(0.0, 1.0, value=1.0, step=0.05, label="top_p")
-            top_k = gr.Number(value=0, label="top_k", precision=0)
+            num_timesteps = gr.Slider(
+                10, 100, value=30, step=5, label="Diffusion steps",
+                info="Denoising steps for image outputs (depth, surface normals, etc.). "
+                     "More steps = higher quality but slower.")
+            top_p = gr.Slider(
+                0.0, 1.0, value=1.0, step=0.05, label="Top-p (nucleus sampling)",
+                info="For token outputs (caption, detection): sample from the smallest set "
+                     "of tokens whose probabilities sum to at least p. 1.0 = disabled.")
+            top_k = gr.Number(
+                value=0, label="Top-k sampling", precision=0,
+                info="For token outputs: sample only from the k most likely tokens. 0 = disabled.")
     return seed, randomize, cfg_text, cfg_img, num_timesteps, top_p, top_k
 
 
@@ -588,22 +653,23 @@ def build_ui() -> gr.Blocks:
             )
             with gr.Row():
                 with gr.Column():
-                    t1_cond = gr.Dropdown(cond_choices, value=default_cond, label="Condition modality")
-                    t1_image = gr.Image(type="pil", label="Condition image", visible=not _is_text_condition(default_cond))
-                    t1_text = gr.Textbox(label="Condition text (caption)", visible=_is_text_condition(default_cond))
-                    t1_targets = gr.CheckboxGroup(target_choices, value=default_targets, label="Target modalities")
-                    t1_seg_cat = gr.Textbox(value="person", label="Segmentation category (used when 'seg' is a target)")
+                    t1_cond = gr.Dropdown(_labeled(cond_choices), value=default_cond, label="Input modality")
+                    t1_image = gr.Image(type="pil", label="Input image", visible=not _is_text_condition(default_cond))
+                    t1_text = gr.Textbox(label="Input text (caption)", visible=_is_text_condition(default_cond))
+                    t1_targets = gr.CheckboxGroup(_labeled(target_choices), value=default_targets, label="Output modalities to generate")
+                    t1_seg_cat = gr.Textbox(value="person", label="Segmentation category (used when Semantic segmentation is an output)")
                     t1_seed, t1_rand, t1_cfgt, t1_cfgi, t1_steps, t1_topp, t1_topk = _advanced_controls()
                     t1_btn = gr.Button("Generate", variant="primary")
-                    t1_seg_preview = gr.Image(
-                        type="filepath", label="Precomputed 'seg' for this example",
-                        interactive=False, visible=True,
+                    t1_precompute = gr.Gallery(
+                        label="Precomputed outputs for this example — RGB → every modality (no GPU)",
+                        columns=4, height="auto", allow_preview=True, show_label=True,
                     )
                     ex = _example_rows()
                     if ex:
-                        # Gallery shows ONLY the images; clicking one fills the condition
-                        # image + its bound seg category (into the prompt box) + the
-                        # precomputed seg preview. No prompt/mask columns in the gallery.
+                        # Clicking an example fills the input image + its bound seg
+                        # category AND shows the offline precompute grid: what the
+                        # model produces for that image across every modality, with
+                        # no GPU cost. Run "Generate" only for your own images.
                         t1_examples = gr.Gallery(
                             value=[r[0] for r in ex], label="Example images (click to load)",
                             columns=5, height="auto", allow_preview=False, show_label=True,
@@ -614,7 +680,7 @@ def build_ui() -> gr.Blocks:
                             return r[0], r[1], r[2]
 
                         t1_examples.select(
-                            _pick_example, None, [t1_image, t1_seg_cat, t1_seg_preview],
+                            _pick_example, None, [t1_image, t1_seg_cat, t1_precompute],
                         )
                 with gr.Column():
                     t1_gallery = gr.Gallery(label="Results", columns=4)
@@ -640,23 +706,23 @@ def build_ui() -> gr.Blocks:
             )
             with gr.Row():
                 with gr.Column():
-                    t2_cond = gr.Dropdown(cond_choices, value=default_cond, label="Condition")
-                    t2_inter = gr.Dropdown(bridge_choices, value=(bridge_choices[0] if bridge_choices else None), label="Intermediate (bridge)")
-                    t2_target = gr.Dropdown(target_choices, value=(target_choices[0] if target_choices else None), label="Target")
-                    t2_image = gr.Image(type="pil", label="Condition image", visible=not _is_text_condition(default_cond))
-                    t2_text = gr.Textbox(label="Condition text (caption)", visible=_is_text_condition(default_cond))
+                    t2_cond = gr.Dropdown(_labeled(cond_choices), value=default_cond, label="Input modality")
+                    t2_inter = gr.Dropdown(_labeled(bridge_choices), value=(bridge_choices[0] if bridge_choices else None), label="Intermediate (bridge) modality")
+                    t2_target = gr.Dropdown(_labeled(target_choices), value=(target_choices[0] if target_choices else None), label="Final output modality")
+                    t2_image = gr.Image(type="pil", label="Input image", visible=not _is_text_condition(default_cond))
+                    t2_text = gr.Textbox(label="Input text (caption)", visible=_is_text_condition(default_cond))
                     ex2 = _example_images()
                     if ex2:
                         gr.Examples(ex2, inputs=t2_image, label="Example images")
                     with gr.Row():
-                        qp1 = gr.Button("caption→rgb→depth")
-                        qp2 = gr.Button("rgb→depth→normal")
-                        qp3 = gr.Button("rgb→normal→caption")
+                        qp1 = gr.Button("Caption → RGB → Depth")
+                        qp2 = gr.Button("RGB → Depth → Surface normals")
+                        qp3 = gr.Button("RGB → Surface normals → Caption")
                     t2_seed, t2_rand, t2_cfgt, t2_cfgi, t2_steps, t2_topp, t2_topk = _advanced_controls()
                     t2_btn = gr.Button("Generate", variant="primary")
                 with gr.Column():
-                    t2_final = gr.Image(label="Final target")
-                    t2_inter_out = gr.Image(label="Intermediate")
+                    t2_final = gr.Image(label="Final output")
+                    t2_inter_out = gr.Image(label="Intermediate output")
                     t2_text_out = gr.Markdown()
                     t2_status = gr.Markdown()
             t2_cond.change(_toggle_condition_input, t2_cond, [t2_image, t2_text])
@@ -689,15 +755,17 @@ def build_ui() -> gr.Blocks:
             )
             with gr.Row():
                 with gr.Column():
-                    t3_task = gr.Radio(["depth", "normal"], value="depth", label="Task (RGB → ?)")
+                    t3_task = gr.Radio(_labeled(["depth", "normal"]), value="depth", label="Output (RGB → ?)")
                     t3_image = gr.Image(type="pil", label="RGB input")
                     ex3 = _example_images()
                     if ex3:
                         gr.Examples(ex3, inputs=t3_image, label="Example images")
                     with gr.Row():
                         t3_seed = gr.Number(value=0, label="Seed", precision=0)
-                        t3_cfgt = gr.Slider(0.0, 10.0, value=4.0, step=0.5, label="cfg_text_scale")
-                        t3_cfgi = gr.Slider(0.0, 10.0, value=2.0, step=0.5, label="cfg_img_scale")
+                        t3_cfgt = gr.Slider(0.0, 10.0, value=4.0, step=0.5, label="Text guidance strength",
+                            info="Classifier-free guidance for text (cfg_text_scale).")
+                        t3_cfgi = gr.Slider(0.0, 10.0, value=2.0, step=0.5, label="Image guidance strength",
+                            info="Classifier-free guidance for the input image (cfg_img_scale).")
                     t3_btn = gr.Button("Generate", variant="primary")
                 with gr.Column():
                     with gr.Row():

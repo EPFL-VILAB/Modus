@@ -165,7 +165,7 @@ As reported in the paper. See the paper for datasets, baselines, and evaluation 
 | MMMU | Accuracy (%) | 51.1 |
 | GenEval | Score | 0.81 |
 | DIODE (Depth) | AbsRel | 0.285 |
-| NYUv2 (Normal) | MAE (°) | 19.92 |
+| NYUv2 (Surface normals) | MAE (°) | 19.92 |
 | RefCOCO (val) | Accuracy (%) | 54.5 |
 | ImageNet-1k | Top-1 / Top-5 (%) | 77.9 / 92.5 |
 
