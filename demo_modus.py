@@ -548,6 +548,22 @@ _EXAMPLE_SEG_CATEGORY = {
 }
 
 
+# Suffixes of the offline precompute previews (``<stem>_<modality>.jpg``); these
+# are NOT selectable input images — they populate the precompute grid instead.
+_PRECOMPUTE_SUFFIXES = tuple(
+    f"_{m}." for m in (
+        "depth", "normal", "seg", "canny", "cocodet",
+        "dino", "dinolocal", "clip", "imagebind", "imagebindlocal",
+        "samseg", "samedge",
+    )
+)
+
+
+def _is_precompute_preview(fname: str) -> bool:
+    f = fname.lower()
+    return any(s in f for s in _PRECOMPUTE_SUFFIXES)
+
+
 def _example_images() -> List[str]:
     d = os.path.join(REPO_ROOT, "test_images")
     if not os.path.isdir(d):
@@ -555,7 +571,7 @@ def _example_images() -> List[str]:
     return [
         os.path.join(d, f) for f in sorted(os.listdir(d))
         if f.lower().endswith((".jpg", ".jpeg", ".png"))
-        and "_seg." not in f.lower()  # exclude the precomputed seg previews
+        and not _is_precompute_preview(f)  # exclude precompute previews
     ]
 
 
@@ -649,7 +665,11 @@ def build_ui() -> gr.Blocks:
                 "### Any-to-Any Generation\n"
                 "Pick one input modality (an image or a caption) and generate any set "
                 "of target modalities from it. Each target is generated on its own, "
-                "conditioned only on the input and not on the other targets."
+                "conditioned only on the input and not on the other targets.\n\n"
+                "💡 **Tip:** clicking an example shows its precomputed outputs for every "
+                "modality instantly (no GPU used). Select **multiple output modalities at "
+                "once** — they run in a single GPU call, so it costs the same quota as one. "
+                "Fewer *diffusion steps* (in Advanced) = faster and less quota."
             )
             with gr.Row():
                 with gr.Column():
