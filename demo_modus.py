@@ -667,9 +667,10 @@ def build_ui() -> gr.Blocks:
                 "of target modalities from it. Each target is generated on its own, "
                 "conditioned only on the input and not on the other targets.\n\n"
                 "💡 **Tip:** clicking an example shows its precomputed outputs for every "
-                "modality instantly (no GPU used). Select **multiple output modalities at "
-                "once** — they run in a single GPU call, so it costs the same quota as one. "
-                "Fewer *diffusion steps* (in Advanced) = faster and less quota."
+                "modality instantly (no GPU used). Selecting **several output modalities at "
+                "once** (a few at a time) runs them in a single GPU session — far cheaper "
+                "on your quota than one at a time. Fewer *diffusion steps* (in Advanced) = "
+                "faster and less quota."
             )
             with gr.Row():
                 with gr.Column():
