@@ -578,7 +578,7 @@ def _example_images() -> List[str]:
 # Modalities shown in the offline precompute grid for each example image, in
 # order. Each is stored next to the example as ``<stem>_<modality>.jpg``.
 PRECOMPUTE_GRID_MODALITIES = [
-    "depth", "normal", "seg", "canny", "cocodet",
+    "depth", "normal", "seg", "samseg", "canny", "samedge", "cocodet",
     "dinolocal", "clip", "imagebind",
 ]
 
