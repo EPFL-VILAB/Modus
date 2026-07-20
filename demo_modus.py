@@ -678,7 +678,13 @@ def build_ui() -> gr.Blocks:
                     t1_image = gr.Image(type="pil", label="Input image", visible=not _is_text_condition(default_cond))
                     t1_text = gr.Textbox(label="Input text (caption)", visible=_is_text_condition(default_cond))
                     t1_targets = gr.CheckboxGroup(_labeled(target_choices), value=default_targets, label="Output modalities to generate")
-                    t1_seg_cat = gr.Textbox(value="person", label="Segmentation category (used when Semantic segmentation is an output)")
+                    t1_seg_cat = gr.Textbox(
+                        value="person",
+                        label="Segmentation category (open vocabulary)",
+                        info="Type any object category, e.g. person, car, building, tree, sky. "
+                             "Semantic segmentation returns a binary mask of this ONE category "
+                             "per generation (one category at a time — not comma-separated). "
+                             "Only used when 'Semantic segmentation' is a selected output.")
                     t1_seed, t1_rand, t1_cfgt, t1_cfgi, t1_steps, t1_topp, t1_topk = _advanced_controls()
                     t1_btn = gr.Button("Generate", variant="primary")
                     t1_precompute = gr.Gallery(
