@@ -303,7 +303,10 @@ def create_inferencer(
         pass  # Skip config-driven loading for dino/dinolocal.
     elif modality_registry is not None:
         if VQVAE is None and (use_dino_tokenizer or use_dinolocal_tokenizer):
-            raise ImportError("fourm.vq.vqvae is required for DINO external tokenizers")
+            raise ImportError(
+                "fourm is required for feature targets (dino/dinolocal/clip/imagebind). "
+                "Install it with: pip install git+https://github.com/apple/ml-4m.git"
+            )
         for name, want_flag in (("dino", use_dino_tokenizer), ("dinolocal", use_dinolocal_tokenizer)):
             if not want_flag:
                 continue
@@ -326,17 +329,26 @@ def create_inferencer(
         # Backward compat: explicit flags still load fixed repos if no registry is provided.
         if use_dino_tokenizer:
             if VQVAE is None:
-                raise ImportError("fourm.vq.vqvae is required for DINO external tokenizers")
+                raise ImportError(
+                "fourm is required for feature targets (dino/dinolocal/clip/imagebind). "
+                "Install it with: pip install git+https://github.com/apple/ml-4m.git"
+            )
             dino_tokenizer = VQVAE.from_pretrained("EPFL-VILAB/4M_tokenizers_DINOv2-B14-global_8k_16_224").eval().to(model_device)
         if use_dinolocal_tokenizer:
             if VQVAE is None:
-                raise ImportError("fourm.vq.vqvae is required for DINOLOCAL external tokenizers")
+                raise ImportError(
+                "fourm is required for feature targets (dino/dinolocal/clip/imagebind). "
+                "Install it with: pip install git+https://github.com/apple/ml-4m.git"
+            )
             dinolocal_tokenizer = VQVAE.from_pretrained("EPFL-VILAB/4M_tokenizers_DINOv2-B14_8k_224-448").eval().to(model_device)
 
     # Config-driven loading for clip / imagebind / imagebindlocal external tokenizers.
     if modality_registry is not None:
         if VQVAE is None and (use_clip_tokenizer or use_imagebind_tokenizer or use_imagebindlocal_tokenizer):
-            raise ImportError("fourm.vq.vqvae is required for external VQ tokenizers")
+            raise ImportError(
+                "fourm is required for feature targets (dino/dinolocal/clip/imagebind). "
+                "Install it with: pip install git+https://github.com/apple/ml-4m.git"
+            )
         for name, want_flag in (
             ("clip", use_clip_tokenizer),
             ("imagebind", use_imagebind_tokenizer),

@@ -92,6 +92,16 @@ pip install -r requirements.txt
 
 Core dependencies are `torch==2.5.1` and `transformers==4.49.0` (see `requirements.txt`). `torch>=2.5` is required for `flex_attention`.
 
+**Feature targets** (`dino`, `dinolocal`, `clip`, `imagebind`) additionally need the
+`fourm` VQ tokenizers from [apple/ml-4m](https://github.com/apple/ml-4m):
+
+```bash
+pip install git+https://github.com/apple/ml-4m.git
+```
+
+The other targets (depth, surface normals, segmentation, canny, detection, caption)
+work without it.
+
 ## Model weights
 
 The model is one self-contained folder — download it once:
