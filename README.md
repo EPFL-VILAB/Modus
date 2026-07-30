@@ -2,22 +2,29 @@
 
 *One decoder that treats every modality symmetrically, with no modality-specific heads, losses, or task pipelines.*
 
-[Paper](https://storage.googleapis.com/multimodal_modus/static/modus_paper.pdf) &nbsp;·&nbsp;
-[Project page](https://modus-multimodal.epfl.ch/) &nbsp;·&nbsp;
-[Dataset](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality) &nbsp;·&nbsp;
-[Model weights](https://huggingface.co/EPFL-VILAB/MODUS) &nbsp;·&nbsp;
-ICML 2026
+[![arXiv](https://img.shields.io/badge/arXiv-2607.25948-b31b1b.svg)](https://arxiv.org/abs/2607.25948)
+[![Project Page](https://img.shields.io/badge/Project-Page-1f72b8.svg)](https://modus-multimodal.epfl.ch/)
+[![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/EPFL-VILAB/MODUS)
+[![Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/EPFL-VILAB/MODUS)
+[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 
-Mingqiao Ye¹\*, Zhaochong An¹ ³\*, Zhitong Gao¹, Xian Liu⁴, François Fleuret⁵, Chuan Li⁶, Amir Zadeh⁶, Serge Belongie³, Afshin Dehghan², Jesse Allardice²†, David Mizrahi²†, Oğuzhan Fatih Kar¹ ²†, Roman Bachmann¹ ²†, Amir Zamir¹
-
-¹EPFL &nbsp; ²Apple &nbsp; ³University of Copenhagen &nbsp; ⁴CUHK &nbsp; ⁵University of Geneva &nbsp; ⁶Lambda AI
-<br><sub>\*equal contribution &nbsp; †equal technical advising</sub>
+> **ICML 2026**
+>
+> Mingqiao Ye¹\*, Zhaochong An¹ ³\*, Zhitong Gao¹, Xian Liu⁴, François Fleuret⁵, Chuan Li⁶, Amir Zadeh⁶, Serge Belongie³, Afshin Dehghan², Jesse Allardice²†, David Mizrahi²†, Oğuzhan Fatih Kar¹ ²†, Roman Bachmann¹ ²†, Amir Zamir¹
+>
+> ¹EPFL &nbsp; ²Apple &nbsp; ³University of Copenhagen &nbsp; ⁴CUHK &nbsp; ⁵University of Geneva &nbsp; ⁶Lambda AI
+> <br><sub>\*equal contribution &nbsp; †equal technical advising</sub>
 
 <p align="center">
   <img src="assets/pull_figure.png" alt="MODUS: any-to-any generation across modalities through one shared decoder-only trunk" width="100%">
 </p>
 
 ---
+
+## Updates
+
+- **2026/07** — 🔥 Initial release: inference & training code, [model weights](https://huggingface.co/EPFL-VILAB/MODUS), the [MODUS-15Modality dataset](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality), and an interactive [demo](https://huggingface.co/spaces/EPFL-VILAB/MODUS).
 
 ## Overview
 
@@ -189,7 +196,7 @@ As reported in the paper. See the paper for datasets, baselines, and evaluation 
              and Belongie, Serge and Dehghan, Afshin and Allardice, Jesse
              and Mizrahi, David and Kar, O\u{g}uzhan Fatih and Bachmann, Roman
              and Zamir, Amir},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2607.25948},
   year    = {2026},
 }
 ```
