@@ -628,6 +628,62 @@ class InterleaveInferencer:
         
         return gen_context
 
+    @torch.no_grad()
+    def update_context_image_pair(
+        self,
+        image,
+        gen_context,
+        cfg_text_context,
+        vae=True,
+        vit=True,
+        modality_type=None,
+        do_modality_norm=False,
+    ):
+        """Append one image condition to full and text-free CFG contexts.
+
+        ``update_context_image`` samples the VAE posterior internally. Replay
+        the same Torch RNG state for the text-free cache update so both branches
+        receive an identical image latent, then restore the state left by the
+        first update so this paired operation consumes RNG exactly once overall.
+        """
+        cpu_rng_before = torch.get_rng_state()
+        cuda_device = torch.cuda.current_device() if torch.cuda.is_available() else None
+        cuda_rng_before = (
+            torch.cuda.get_rng_state(cuda_device) if cuda_device is not None else None
+        )
+
+        gen_context = self.update_context_image(
+            image,
+            gen_context,
+            vae=vae,
+            vit=vit,
+            modality_type=modality_type,
+            do_modality_norm=do_modality_norm,
+        )
+
+        cpu_rng_after = torch.get_rng_state()
+        cuda_rng_after = (
+            torch.cuda.get_rng_state(cuda_device) if cuda_device is not None else None
+        )
+        torch.set_rng_state(cpu_rng_before)
+        if cuda_device is not None:
+            torch.cuda.set_rng_state(cuda_rng_before, cuda_device)
+        try:
+            cfg_text_context = self.update_context_image(
+                image,
+                cfg_text_context,
+                vae=vae,
+                vit=vit,
+                modality_type=modality_type,
+                do_modality_norm=do_modality_norm,
+            )
+        finally:
+            torch.set_rng_state(cpu_rng_after)
+            if cuda_device is not None:
+                torch.cuda.set_rng_state(cuda_rng_after, cuda_device)
+
+        return gen_context, cfg_text_context
+
     # ── Low-level generators ──────────────────────────────────────────────────
 
     @torch.no_grad()
@@ -1139,14 +1195,14 @@ class InterleaveInferencer:
                         modality_type_dict=modality_type_dict,
                     )
                     gen_context = self.update_context_text(prefix, gen_context)
+                    cfg_text_context = self.update_context_text(prefix, cfg_text_context)
                     cfg_img_context = self.update_context_text(prefix, cfg_img_context)
-                    gen_context = self.update_context_image(
-                        seg_img, gen_context,
+                    gen_context, cfg_text_context = self.update_context_image_pair(
+                        seg_img, gen_context, cfg_text_context,
                         vae=need_vae, vit=need_vit,
                         modality_type="seg", do_modality_norm=do_modality_norm,
                     )
                     image_shapes = seg_img.size[::-1]
-                    cfg_text_context = deepcopy(gen_context)
                 else:
                     input_term = self.vae_transform.resize_transform(pil_img2rgb(input_term))
                     need_vae, need_vit = self._inference_conditioning_flags(
@@ -1160,14 +1216,13 @@ class InterleaveInferencer:
                         need_vae = False
                     elif cond_feature_mode == "vae":
                         need_vit = False
-                    gen_context = self.update_context_image(
-                        input_term, gen_context,
+                    gen_context, cfg_text_context = self.update_context_image_pair(
+                        input_term, gen_context, cfg_text_context,
                         vae=need_vae, vit=need_vit,
                         modality_type=modality_type,
                         do_modality_norm=do_modality_norm,
                     )
                     image_shapes = input_term.size[::-1]
-                    cfg_text_context = deepcopy(gen_context)
 
             else:
                 raise ValueError(f"Unsupported input type: {type(input_term)}")
@@ -1562,17 +1617,11 @@ class InterleaveInferencer:
             gen_context = deepcopy(base_context_no_intermediate)
             if seg_cond_prefix is not None:
                 gen_context = self.update_context_text(seg_cond_prefix, gen_context)
-            gen_context = self.update_context_image(
-                inter_img, gen_context,
-                vae=need_vae,
-                modality_type=intermediate_modality,
-                do_modality_norm=do_modality_norm,
-            )
             cfg_text_context = deepcopy(base_cfg_text_context)
             if seg_cond_prefix is not None:
                 cfg_text_context = self.update_context_text(seg_cond_prefix, cfg_text_context)
-            cfg_text_context = self.update_context_image(
-                inter_img, cfg_text_context,
+            gen_context, cfg_text_context = self.update_context_image_pair(
+                inter_img, gen_context, cfg_text_context,
                 vae=need_vae,
                 modality_type=intermediate_modality,
                 do_modality_norm=do_modality_norm,
@@ -1870,13 +1919,8 @@ class InterleaveInferencer:
                                 seg_prefix = f"mask category: {seg_category or 'person'}"
                                 pass2_gen = self.update_context_text(seg_prefix, pass2_gen)
                                 pass2_cfg_text = self.update_context_text(seg_prefix, pass2_cfg_text)
-                            pass2_gen = self.update_context_image(
-                                mirror_img, pass2_gen,
-                                vae=False, modality_type=inter_mod,
-                                do_modality_norm=do_modality_norm,
-                            )
-                            pass2_cfg_text = self.update_context_image(
-                                mirror_img, pass2_cfg_text,
+                            pass2_gen, pass2_cfg_text = self.update_context_image_pair(
+                                mirror_img, pass2_gen, pass2_cfg_text,
                                 vae=False, modality_type=inter_mod,
                                 do_modality_norm=do_modality_norm,
                             )
