@@ -5,6 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2607.25948-b31b1b.svg)](https://arxiv.org/abs/2607.25948)
 [![Project Page](https://img.shields.io/badge/Project-Page-1f72b8.svg)](https://modus-multimodal.epfl.ch/)
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/EPFL-VILAB/MODUS)
+[![Hunyuan Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MODUS--Hunyuan-blue)](https://huggingface.co/EPFL-VILAB/MODUS-Hunyuan)
 [![Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/EPFL-VILAB/MODUS)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
@@ -34,7 +35,7 @@ MODUS unifies any-to-any multimodal generation in a single decoder: one causal t
 - a **1D expert** handles discrete sequences (text, grounding boxes, DINOv2 tokens, ...) with autoregressive next-token prediction (cross-entropy);
 - a **2D expert** handles continuous spatial latents (VAE + ViT features) with flow matching.
 
-Training uses exactly two losses, summed: cross-entropy for the 1D expert and a flow-matching objective for the 2D expert. There are no segmentation/depth/detection heads and no per-task decoders; every modality goes through the same trunk. The model adapts the pretrained [BAGEL-7B](https://github.com/ByteDance-Seed/Bagel) mixture-of-transformers.
+Training uses exactly two losses, summed: cross-entropy for the 1D expert and a flow-matching objective for the 2D expert. There are no segmentation/depth/detection heads and no per-task decoders; every modality goes through the same trunk. We release both the original BAGEL-based model and an optional HunyuanImage-3.0-based model behind the same inference interface.
 
 <p align="center">
   <img src="assets/method.png" alt="MODUS architecture: modality encoders feed one decoder-only transformer with a 1D expert (autoregressive next-token prediction) and a 2D expert (flow matching)" width="100%">
@@ -80,6 +81,7 @@ The released registry (`conf/modalities/instruction_16mod_stage2.yaml`) defines 
 ├── demo_modus.py       Gradio demo (any-to-any / chained / representation)
 ├── modeling/
 │   ├── bagel/          MODUS model: Bagel + Qwen2 MoT backbone + SigLIP ViT
+│   ├── hunyuan_image_3/ Optional MODUS-Hunyuan inference backend
 │   └── autoencoder.py  VAE for the 2D-expert latents
 ├── core/               Modality registry (modality.py) + model/tokenizer registries
 ├── any2any/            Inference backend: inferencer.py (engine), load_any2any.py, any2any_tasks.py
@@ -112,7 +114,15 @@ work without it.
 
 ## Model weights
 
-The model is one self-contained folder — download it once:
+Two self-contained checkpoints are available. The original BAGEL backend stays
+the default; Hunyuan is selected only with `--backend hunyuan`.
+
+| Checkpoint | Backend flag | Runtime |
+|---|---|---|
+| [MODUS](https://huggingface.co/EPFL-VILAB/MODUS) | default (`bagel`) | standard installation above |
+| [MODUS-Hunyuan](https://huggingface.co/EPFL-VILAB/MODUS-Hunyuan) | `--backend hunyuan` | separate Python 3.12 / PyTorch 2.8 environment |
+
+Download the original MODUS checkpoint with:
 
 ```bash
 huggingface-cli download EPFL-VILAB/MODUS --local-dir models/modus
@@ -127,10 +137,13 @@ backbone. Install its additional runtime dependency and download the exported
 inference checkpoint:
 
 ```bash
-# Use a separate Python 3.12 environment with a platform-appropriate recent
-# PyTorch build (HunyuanImage-3.0 recommends PyTorch 2.8).
+conda create -n modus-hunyuan python=3.12 -y
+conda activate modus-hunyuan
+# Match the wheel index to your CUDA installation; cu128 is the tested upstream stack.
+pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
 pip install -e '.[hunyuan]'
 huggingface-cli download EPFL-VILAB/MODUS-Hunyuan --local-dir models/modus-hunyuan
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 ```
 
 Select it explicitly with `--backend hunyuan`; omitting the flag preserves the
@@ -140,21 +153,22 @@ is validated on four GPUs.
 
 ```bash
 # RGB → depth
-python infer.py --backend hunyuan --condition rgb --target depth \
+python infer.py --backend hunyuan --condition rgb --target depth --num_samples 1 \
     checkpoint_path=models/modus-hunyuan input_image=test_images/01_basil_cathedral.jpg
 
 # Caption → RGB
-python infer.py --backend hunyuan --condition caption --target rgb \
+python infer.py --backend hunyuan --condition caption --target rgb --num_samples 1 \
     checkpoint_path=models/modus-hunyuan prompt="a red bus in front of a clock tower"
 
 # Chained: RGB → COCO detections → depth
-python infer.py --backend hunyuan --condition rgb --intermediate cocodet --target depth \
+python infer.py --backend hunyuan --condition rgb --intermediate cocodet --target depth --num_samples 1 \
     checkpoint_path=models/modus-hunyuan input_image=test_images/01_basil_cathedral.jpg
 ```
 
-The exported checkpoint contains BF16 inference weights and does not include
-optimizer or training state. Hunyuan-derived code and weights have additional
-license terms; see [HUNYUAN_LICENSE_NOTICE.md](HUNYUAN_LICENSE_NOTICE.md).
+The exported checkpoint contains its tokenizer, VAE, modality registry and BF16
+inference weights; it does not include optimizer or training state.
+Hunyuan-derived code and weights have additional license terms; see
+[HUNYUAN_LICENSE_NOTICE.md](HUNYUAN_LICENSE_NOTICE.md).
 
 ## Inference
 

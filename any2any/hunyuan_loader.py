@@ -849,9 +849,23 @@ def _load_hunyuan_release_model(*, model_path: str, modality_config_path: Option
             flush=True,
         )
 
-    embedded_modality_config = os.path.join(model_path, "modality_config.yaml")
+    embedded_modality_name = release_metadata.get("modality_config", "modality_config.yaml")
+    if (
+        not isinstance(embedded_modality_name, str)
+        or not embedded_modality_name
+        or os.path.isabs(embedded_modality_name)
+        or ".." in embedded_modality_name.split(os.sep)
+    ):
+        raise RuntimeError(
+            f"Invalid embedded modality config path: {embedded_modality_name!r}"
+        )
+    embedded_modality_config = os.path.join(model_path, embedded_modality_name)
     if modality_config_path is None:
         modality_config_path = embedded_modality_config
+    if not os.path.isfile(modality_config_path):
+        raise FileNotFoundError(
+            f"Missing Hunyuan modality config: {modality_config_path}"
+        )
     device_map = os.environ.get("HUNYUAN_DEVICE_MAP", "auto")
     # Match the loader used for the raw training checkpoint.  Passing an
     # implementation here changes Transformers' dispatch and can introduce

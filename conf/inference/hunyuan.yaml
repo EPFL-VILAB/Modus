@@ -8,7 +8,9 @@ checkpoint_path: null
 use_ema: true
 train_config_path: conf/inference/hunyuan_model.yaml
 
-modality_config: conf/modalities/instruction_hunyuan_16mod_stage2.yaml
+# The exported checkpoint carries the exact registry used for training.  Leave
+# this null so the loader uses that embedded copy and cannot drift from it.
+modality_config: null
 
 # Stage 2/3 use native-chat serialization with a target instruction, but no
 # separate condition instruction.
