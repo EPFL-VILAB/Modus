@@ -1,0 +1,16 @@
+# Minimal construction config used by the inference loader.  Runtime image
+# geometry is pinned by any2any/hunyuan_runtime.py to the validated 64-patch
+# profile; this file is not a training launcher.
+model:
+  model_name: hunyuan_image_3
+  model_path: ${oc.env:HUNYUAN_MODEL_PATH,models/HunyuanImage-3-Instruct}
+  latent_patch_size: 1
+  vit_patch_size: 16
+  vit_max_num_patch_per_side: 64
+
+training:
+  visual_gen: true
+  visual_und: true
+  freeze_vae: true
+  freeze_llm: false
+  freeze_vit: false

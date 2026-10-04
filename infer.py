@@ -46,6 +46,7 @@ def _parse_args():
 
     repo_root = os.path.dirname(os.path.abspath(__file__))
 
+    backend = "bagel"
     condition = None
     target = None
     intermediate = None
@@ -54,7 +55,10 @@ def _parse_args():
     cleaned = []
     i = 0
     while i < len(args):
-        if args[i] == "--condition" and i + 1 < len(args):
+        if args[i] == "--backend" and i + 1 < len(args):
+            backend = args[i + 1].lower()
+            i += 2
+        elif args[i] == "--condition" and i + 1 < len(args):
             condition = args[i + 1]
             i += 2
         elif args[i] == "--target" and i + 1 < len(args):
@@ -70,6 +74,8 @@ def _parse_args():
             cleaned.append(args[i])
             i += 1
 
+    if backend not in {"bagel", "hunyuan"}:
+        raise ValueError(f"Unknown backend {backend!r}; expected 'bagel' or 'hunyuan'")
     if not condition or not target:
         _print_usage()
         sys.exit(1)
@@ -79,6 +85,9 @@ def _parse_args():
     if not os.path.exists(base_yaml):
         raise FileNotFoundError(f"Base config not found: {base_yaml}")
     base_cfg = OmegaConf.load(base_yaml)
+    if backend == "hunyuan":
+        backend_yaml = os.path.join(repo_root, "conf", "inference", "hunyuan.yaml")
+        base_cfg = OmegaConf.merge(base_cfg, OmegaConf.load(backend_yaml))
 
     # Apply key=value overrides
     overrides = [a for a in cleaned if "=" in a and not a.startswith("--")]
@@ -94,19 +103,21 @@ def _parse_args():
     cfg["target"] = target
     cfg["intermediate"] = intermediate
     cfg["num_samples"] = num_samples
+    cfg["_backend"] = backend
     cfg["_cli_override_keys"] = cli_override_keys
     return cfg, repo_root
 
 
 def _print_usage():
     print("Usage:")
-    print("  python infer.py --condition <modality> --target <modality> [--intermediate <modality>] [key=value ...]")
+    print("  python infer.py [--backend bagel|hunyuan] --condition <modality> --target <modality> [--intermediate <modality>] [key=value ...]")
     print()
     print("Examples:")
     print("  python infer.py --condition rgb --target depth checkpoint_path=/path/to/ckpt input_image=test.jpg")
     print("  python infer.py --condition rgb --target dinolocal checkpoint_path=/path/to/ckpt input_image=test.jpg")
     print("  python infer.py --condition caption --target image checkpoint_path=/path/to/ckpt prompt='a cat'")
     print("  python infer.py --condition caption --target image --intermediate depth checkpoint_path=/path/to/ckpt prompt='a house'")
+    print("  python infer.py --backend hunyuan --condition rgb --target depth checkpoint_path=/path/to/hunyuan input_image=test.jpg")
 
 
 def main():
@@ -116,14 +127,25 @@ def main():
     if repo_root not in sys.path:
         sys.path.insert(0, repo_root)
 
-    from any2any.any2any_tasks import (
-        create_inferencer,
-        run_inference_task,
-    )
-    from any2any.load_any2any import (
-        load_any2any_model_hf,
-        load_any2any_model_training_checkpoint,
-    )
+    backend = cfg.pop("_backend")
+    if backend == "hunyuan":
+        # Configure the validated wire format before importing Hunyuan modules:
+        # several model components intentionally read these settings at import.
+        from any2any.hunyuan_runtime import configure_hunyuan_runtime
+
+        effective_runtime = configure_hunyuan_runtime()
+        print(f"[hunyuan-runtime] {effective_runtime}")
+        from any2any.hunyuan_tasks import create_inferencer, run_inference_task
+        from any2any.hunyuan_loader import (
+            load_any2any_model_hf,
+            load_any2any_model_training_checkpoint,
+        )
+    else:
+        from any2any.any2any_tasks import create_inferencer, run_inference_task
+        from any2any.load_any2any import (
+            load_any2any_model_hf,
+            load_any2any_model_training_checkpoint,
+        )
 
     # Resolve paths relative to repo root
     def resolve_path(p):
@@ -140,7 +162,10 @@ def main():
     # tokenizer + VAE in one dir). When only checkpoint_path is given (and
     # BAGEL_MODEL_PATH is not pointed elsewhere), reuse it as model_path so that
     # `python infer.py ... checkpoint_path=<dir>` works without a second env var.
-    if fmt == "training" and cfg.get("checkpoint_path") and not os.environ.get("BAGEL_MODEL_PATH"):
+    if (backend == "bagel" and fmt == "training" and cfg.get("checkpoint_path")
+            and not os.environ.get("BAGEL_MODEL_PATH")):
+        cfg["model_path"] = cfg["checkpoint_path"]
+    if backend == "hunyuan" and fmt == "hf" and cfg.get("checkpoint_path"):
         cfg["model_path"] = cfg["checkpoint_path"]
 
     # ── Load MODUS any2any model ──────────────────────────────────────────
@@ -164,6 +189,7 @@ def main():
             init_on_gpu=cfg["init_on_gpu"],
             use_ema=cfg.get("use_ema", False),
             modality_config_path=modality_config_path,
+            train_config_path=resolve_path(cfg.get("train_config_path")),
         )
     else:
         raise ValueError(f"Unknown format: {fmt}")
@@ -172,6 +198,12 @@ def main():
     condition = cfg["condition"]
     target = cfg["target"]
     intermediate = cfg.get("intermediate")
+    if backend == "hunyuan":
+        # Public BAGEL examples historically call the RGB generation target
+        # "image".  Hunyuan training names the same modality "rgb".
+        condition = ["rgb" if name == "image" else name for name in condition]
+        target = "rgb" if target == "image" else target
+        intermediate = "rgb" if intermediate == "image" else intermediate
 
     # Auto-determine which external tokenizers to load
     use_dino = use_dinolocal = use_clip = use_imagebind = use_imagebindlocal = False

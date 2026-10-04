@@ -24,6 +24,7 @@
 
 ## Updates
 
+- **2026/10** — Added the optional **MODUS-Hunyuan** inference backend and checkpoint.
 - **2026/07** — 🔥 Initial release: inference & training code, [model weights](https://huggingface.co/EPFL-VILAB/MODUS), the [MODUS-15Modality dataset](https://huggingface.co/datasets/epfl-vilab-modus/MODUS-15Modality), and an interactive [demo](https://huggingface.co/spaces/EPFL-VILAB/MODUS).
 
 ## Overview
@@ -119,6 +120,42 @@ huggingface-cli download EPFL-VILAB/MODUS --local-dir models/modus
 
 Pass that folder as `checkpoint_path` in any command below.
 
+### MODUS-Hunyuan (optional)
+
+MODUS-Hunyuan uses the same 16-modality interface with a HunyuanImage-3.0 MoE
+backbone. Install its additional runtime dependency and download the exported
+inference checkpoint:
+
+```bash
+# Use a separate Python 3.12 environment with a platform-appropriate recent
+# PyTorch build (HunyuanImage-3.0 recommends PyTorch 2.8).
+pip install -e '.[hunyuan]'
+huggingface-cli download EPFL-VILAB/MODUS-Hunyuan --local-dir models/modus-hunyuan
+```
+
+Select it explicitly with `--backend hunyuan`; omitting the flag preserves the
+original BAGEL backend and defaults. The BF16 checkpoint is approximately
+158 GiB and the loader distributes it with `device_map=auto`; the release path
+is validated on four GPUs.
+
+```bash
+# RGB → depth
+python infer.py --backend hunyuan --condition rgb --target depth \
+    checkpoint_path=models/modus-hunyuan input_image=test_images/01_basil_cathedral.jpg
+
+# Caption → RGB
+python infer.py --backend hunyuan --condition caption --target rgb \
+    checkpoint_path=models/modus-hunyuan prompt="a red bus in front of a clock tower"
+
+# Chained: depth → caption → RGB
+python infer.py --backend hunyuan --condition depth --intermediate caption --target rgb \
+    checkpoint_path=models/modus-hunyuan input_image=depth.png
+```
+
+The exported checkpoint contains BF16 inference weights and does not include
+optimizer or training state. Hunyuan-derived code and weights have additional
+license terms; see [HUNYUAN_LICENSE_NOTICE.md](HUNYUAN_LICENSE_NOTICE.md).
+
 ## Inference
 
 The unified CLI takes a source modality (`--condition`), a target (`--target`), and optional intermediate steps (`--intermediate`):
@@ -204,3 +241,6 @@ As reported in the paper. See the paper for datasets, baselines, and evaluation 
 ## License
 
 Released under the [Apache 2.0 License](LICENSE). MODUS builds on [BAGEL](https://github.com/ByteDance-Seed/Bagel) (Apache 2.0); we thank the BAGEL authors.
+
+The optional MODUS-Hunyuan backend and weights include Hunyuan-derived
+components with separate terms; see [HUNYUAN_LICENSE_NOTICE.md](HUNYUAN_LICENSE_NOTICE.md).
