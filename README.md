@@ -147,9 +147,9 @@ python infer.py --backend hunyuan --condition rgb --target depth \
 python infer.py --backend hunyuan --condition caption --target rgb \
     checkpoint_path=models/modus-hunyuan prompt="a red bus in front of a clock tower"
 
-# Chained: depth → caption → RGB
-python infer.py --backend hunyuan --condition depth --intermediate caption --target rgb \
-    checkpoint_path=models/modus-hunyuan input_image=depth.png
+# Chained: RGB → COCO detections → depth
+python infer.py --backend hunyuan --condition rgb --intermediate cocodet --target depth \
+    checkpoint_path=models/modus-hunyuan input_image=test_images/01_basil_cathedral.jpg
 ```
 
 The exported checkpoint contains BF16 inference weights and does not include
