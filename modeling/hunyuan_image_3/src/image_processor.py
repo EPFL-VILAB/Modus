@@ -1,3 +1,4 @@
+# Modified by EPFL VILAB for MODUS, 2026.
 # Licensed under the TENCENT HUNYUAN COMMUNITY LICENSE AGREEMENT (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at

@@ -1,3 +1,4 @@
+# Modified by EPFL VILAB for MODUS, 2026.
 """
 Reference code
 [FLUX] https://github.com/black-forest-labs/flux/blob/main/src/flux/modules/autoencoder.py

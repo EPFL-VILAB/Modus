@@ -16,3 +16,12 @@ This product includes software from the following projects:
   Copyright The HuggingFace Inc. team and the Qwen team. Apache License 2.0.
   The vendored Qwen2 (modeling/qwen2/) and SigLIP (modeling/siglip/) model code
   is adapted from Transformers.
+
+------------------------------------------------------------------------------
+Tencent Hunyuan notice required by the Tencent Hunyuan Community License:
+
+Tencent Hunyuan is licensed under the Tencent Hunyuan Community License Agreement, Copyright © 2025 Tencent. All Rights Reserved. The trademark rights of “Tencent Hunyuan” are owned by Tencent or its affiliate.
+
+The optional Hunyuan-derived components are governed by LICENSE_HUNYUAN rather
+than the repository's Apache-2.0 license. See HUNYUAN_LICENSE_NOTICE.md for
+scope and additional information.

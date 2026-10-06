@@ -1,3 +1,4 @@
+# Modified by EPFL VILAB for MODUS, 2026.
 # HunyuanImage-3.0 source modules (copied from the upstream repository).
 #
 # Individual modules are imported directly by the MODUS integration layer,

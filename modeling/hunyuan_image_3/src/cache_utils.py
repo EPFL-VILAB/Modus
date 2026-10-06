@@ -1,3 +1,4 @@
+# Modified by EPFL VILAB for MODUS, 2026.
 import torch
 import torch.nn as nn
 import math
