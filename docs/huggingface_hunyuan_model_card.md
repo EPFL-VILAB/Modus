@@ -25,6 +25,17 @@ It is exported as a self-contained BF16 inference checkpoint with its
 tokenizer, VAE, modality registry, MODUS adapter, and 40 weight shards. It does
 not contain optimizer, scheduler, data-loader, or training state.
 
+### Checkpoint layout
+
+The 40 `model-xxxxx-of-00040.safetensors` files are standard Hugging Face
+inference shards capped at approximately 4 GiB; they do not correspond to a
+GPU count. `model.safetensors.index.json` maps every model tensor to its shard.
+
+`modus_adapter.safetensors` is a required 23 MB sidecar containing five
+MODUS-specific learned positional-embedding tables for CLIP, DINO, and
+ImageBind token sequences. It is not a LoRA or PEFT adapter. The remaining
+backbone, MoE, heads, and VAE parameters are stored in the 40 main shards.
+
 ## Use
 
 Inference code and examples are provided in the
