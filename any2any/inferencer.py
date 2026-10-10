@@ -294,106 +294,42 @@ class InterleaveInferencer:
         return gt_feat.transpose(1, 2).reshape(1, 768, 32, 32)
 
     @torch.no_grad()
-    def update_context_dino_tokens_from_image(self, image, gen_context):
-        """Condition with GT DINO global tokenizer codes instead of image VAE/ViT."""
-        if self.dino_tokenizer is None:
-            raise RuntimeError("dino_tokenizer is required for use_gt_dino_condition=true.")
-        past_key_values = gen_context['past_key_values']
-        kv_lens = gen_context['kv_lens']
-        ropes = gen_context['ropes']
+    def _encode_codebook_condition_from_image(self, image, modality):
+        """Extract and tokenize one image-backed feature condition."""
         device = next(self.model.parameters()).device
-
         image_rgb = pil_img2rgb(image)
-        gt_global_feat = self._extract_dino_global_feature(image_rgb, device=device)  # [1, 768]
-        encoded = self.dino_tokenizer.encode(gt_global_feat.float().unsqueeze(2).unsqueeze(3))
+        if modality == "dino":
+            if self.dino_tokenizer is None:
+                raise RuntimeError("dino_tokenizer is required for use_gt_dino_condition=true.")
+            feature = self._extract_dino_global_feature(image_rgb, device=device)
+            feature = feature.float().unsqueeze(2).unsqueeze(3)
+            tokenizer = self.dino_tokenizer
+        elif modality == "dinolocal":
+            if self.dinolocal_tokenizer is None:
+                raise RuntimeError("dinolocal_tokenizer is required for use_gt_dinolocal_condition=true.")
+            feature = self._extract_dino_local_feature_map(image_rgb, device=device).float()
+            tokenizer = self.dinolocal_tokenizer
+        elif modality == "clip":
+            if self.clip_tokenizer is None:
+                raise RuntimeError("clip_tokenizer is required for use_gt_clip_condition=true.")
+            feature = self._extract_clip_local_feature_map(image_rgb, device=device).float()
+            tokenizer = self.clip_tokenizer
+        elif modality == "imagebind":
+            if self.imagebind_tokenizer is None:
+                raise RuntimeError("imagebind_tokenizer is required for use_gt_imagebind_condition=true.")
+            feature = self._extract_imagebind_global_feature(image_rgb, device=device).float()
+            tokenizer = self.imagebind_tokenizer
+        elif modality == "imagebindlocal":
+            if self.imagebindlocal_tokenizer is None:
+                raise RuntimeError("imagebindlocal_tokenizer is required for use_gt_imagebindlocal_condition=true.")
+            feature = self._extract_imagebindlocal_feature_map(image_rgb, device=device).float()
+            tokenizer = self.imagebindlocal_tokenizer
+        else:
+            raise ValueError(f"Unsupported codebook condition modality: {modality}")
+
+        encoded = tokenizer.encode(feature)
         token_ids = encoded[-1] if isinstance(encoded, (tuple, list)) else encoded
-        token_ids = token_ids.reshape(-1).detach().long().to(device)
-
-        code_base = self._get_code_base("dino", fallback=155773)
-        code_token_ids = token_ids + int(code_base)
-
-        start_key = "start_of_dino"
-        end_key = "end_of_dino"
-        if start_key not in self.new_token_ids or end_key not in self.new_token_ids:
-            raise RuntimeError("Missing start/end dino tokens in new_token_ids.")
-        packed_text_ids = torch.cat([
-            torch.tensor([self.new_token_ids[start_key]], dtype=torch.long, device=device),
-            code_token_ids,
-            torch.tensor([self.new_token_ids[end_key]], dtype=torch.long, device=device),
-        ], dim=0)
-
-        curr_kvlen = int(kv_lens[0])
-        curr_position_id = int(ropes[0])
-        seq_len = int(packed_text_ids.numel())
-        generation_input = {
-            "text_token_lens": torch.tensor([seq_len], dtype=torch.int, device=device),
-            "packed_text_ids": packed_text_ids,
-            "packed_text_position_ids": torch.arange(curr_position_id, curr_position_id + seq_len, dtype=torch.long, device=device),
-            "packed_text_indexes": torch.arange(curr_kvlen, curr_kvlen + seq_len, dtype=torch.long, device=device),
-            "packed_key_value_indexes": torch.arange(0, curr_kvlen, dtype=torch.long, device=device),
-            "key_values_lens": torch.tensor([curr_kvlen], dtype=torch.int, device=device),
-        }
-
-        past_key_values = self.model.forward_cache_update_text(
-            past_key_values,
-            pos_embed_key="dino",
-            **generation_input,
-        )
-        gen_context['kv_lens'] = [curr_kvlen + seq_len]
-        gen_context['ropes'] = [curr_position_id + seq_len]
-        gen_context['past_key_values'] = past_key_values
-        return gen_context
-
-    @torch.no_grad()
-    def update_context_dinolocal_tokens_from_image(self, image, gen_context):
-        """Condition with GT DINO-local tokenizer codes instead of image VAE/ViT."""
-        if self.dinolocal_tokenizer is None:
-            raise RuntimeError("dinolocal_tokenizer is required for use_gt_dinolocal_condition=true.")
-        past_key_values = gen_context['past_key_values']
-        kv_lens = gen_context['kv_lens']
-        ropes = gen_context['ropes']
-        device = next(self.model.parameters()).device
-
-        image_rgb = pil_img2rgb(image)
-        gt_feat_map = self._extract_dino_local_feature_map(image_rgb, device=device)  # [1, 768, 32, 32]
-        encoded = self.dinolocal_tokenizer.encode(gt_feat_map.float())
-        token_ids = encoded[-1] if isinstance(encoded, (tuple, list)) else encoded
-        token_ids = token_ids.reshape(-1).detach().long().to(device)
-
-        code_base = self._get_code_base("dinolocal", fallback=163967)
-        code_token_ids = token_ids + int(code_base)
-
-        start_key = "start_of_dinolocal"
-        end_key = "end_of_dinolocal"
-        if start_key not in self.new_token_ids or end_key not in self.new_token_ids:
-            raise RuntimeError("Missing start/end dinolocal tokens in new_token_ids.")
-        packed_text_ids = torch.cat([
-            torch.tensor([self.new_token_ids[start_key]], dtype=torch.long, device=device),
-            code_token_ids,
-            torch.tensor([self.new_token_ids[end_key]], dtype=torch.long, device=device),
-        ], dim=0)
-
-        curr_kvlen = int(kv_lens[0])
-        curr_position_id = int(ropes[0])
-        seq_len = int(packed_text_ids.numel())
-        generation_input = {
-            "text_token_lens": torch.tensor([seq_len], dtype=torch.int, device=device),
-            "packed_text_ids": packed_text_ids,
-            "packed_text_position_ids": torch.arange(curr_position_id, curr_position_id + seq_len, dtype=torch.long, device=device),
-            "packed_text_indexes": torch.arange(curr_kvlen, curr_kvlen + seq_len, dtype=torch.long, device=device),
-            "packed_key_value_indexes": torch.arange(0, curr_kvlen, dtype=torch.long, device=device),
-            "key_values_lens": torch.tensor([curr_kvlen], dtype=torch.int, device=device),
-        }
-
-        past_key_values = self.model.forward_cache_update_text(
-            past_key_values,
-            pos_embed_key="dinolocal",
-            **generation_input,
-        )
-        gen_context['kv_lens'] = [curr_kvlen + seq_len]
-        gen_context['ropes'] = [curr_position_id + seq_len]
-        gen_context['past_key_values'] = past_key_values
-        return gen_context
+        return token_ids.reshape(-1).detach().long().to(device), device
 
     # ── CLIP / ImageBind online feature extractors (mirror DINO path) ──────────
     # Feature recipes (verified against 4M tokenizer configs + ml-4m source):
@@ -475,7 +411,8 @@ class InterleaveInferencer:
         kv_lens = gen_context['kv_lens']
         ropes = gen_context['ropes']
 
-        code_base = self._get_code_base(modality, fallback=0)
+        fallback_bases = {"dino": 155773, "dinolocal": 163967}
+        code_base = self._get_code_base(modality, fallback=fallback_bases.get(modality, 0))
         code_token_ids = token_ids.reshape(-1).detach().long().to(device) + int(code_base)
 
         start_key, end_key = f"start_of_{modality}", f"end_of_{modality}"
@@ -507,34 +444,43 @@ class InterleaveInferencer:
         return gen_context
 
     @torch.no_grad()
+    def update_context_dino_tokens_from_image(self, image, gen_context):
+        token_ids, device = self._encode_codebook_condition_from_image(image, "dino")
+        return self._append_codebook_condition(token_ids, "dino", gen_context, device)
+
+    @torch.no_grad()
+    def update_context_dinolocal_tokens_from_image(self, image, gen_context):
+        token_ids, device = self._encode_codebook_condition_from_image(image, "dinolocal")
+        return self._append_codebook_condition(token_ids, "dinolocal", gen_context, device)
+
+    @torch.no_grad()
     def update_context_clip_tokens_from_image(self, image, gen_context):
-        if self.clip_tokenizer is None:
-            raise RuntimeError("clip_tokenizer is required for use_gt_clip_condition=true.")
-        device = next(self.model.parameters()).device
-        feat = self._extract_clip_local_feature_map(pil_img2rgb(image), device=device)
-        encoded = self.clip_tokenizer.encode(feat.float())
-        token_ids = encoded[-1] if isinstance(encoded, (tuple, list)) else encoded
+        token_ids, device = self._encode_codebook_condition_from_image(image, "clip")
         return self._append_codebook_condition(token_ids, "clip", gen_context, device)
 
     @torch.no_grad()
     def update_context_imagebind_tokens_from_image(self, image, gen_context):
-        if self.imagebind_tokenizer is None:
-            raise RuntimeError("imagebind_tokenizer is required for use_gt_imagebind_condition=true.")
-        device = next(self.model.parameters()).device
-        feat = self._extract_imagebind_global_feature(pil_img2rgb(image), device=device)
-        encoded = self.imagebind_tokenizer.encode(feat.float())
-        token_ids = encoded[-1] if isinstance(encoded, (tuple, list)) else encoded
+        token_ids, device = self._encode_codebook_condition_from_image(image, "imagebind")
         return self._append_codebook_condition(token_ids, "imagebind", gen_context, device)
 
     @torch.no_grad()
     def update_context_imagebindlocal_tokens_from_image(self, image, gen_context):
-        if self.imagebindlocal_tokenizer is None:
-            raise RuntimeError("imagebindlocal_tokenizer is required for use_gt_imagebindlocal_condition=true.")
-        device = next(self.model.parameters()).device
-        feat = self._extract_imagebindlocal_feature_map(pil_img2rgb(image), device=device)
-        encoded = self.imagebindlocal_tokenizer.encode(feat.float())
-        token_ids = encoded[-1] if isinstance(encoded, (tuple, list)) else encoded
+        token_ids, device = self._encode_codebook_condition_from_image(image, "imagebindlocal")
         return self._append_codebook_condition(token_ids, "imagebindlocal", gen_context, device)
+
+    @torch.no_grad()
+    def update_context_codebook_image_pair(
+        self, image, modality, gen_context, cfg_text_context
+    ):
+        """Encode once and append identical feature tokens to both CFG branches."""
+        token_ids, device = self._encode_codebook_condition_from_image(image, modality)
+        gen_context = self._append_codebook_condition(
+            token_ids, modality, gen_context, device
+        )
+        cfg_text_context = self._append_codebook_condition(
+            token_ids, modality, cfg_text_context, device
+        )
+        return gen_context, cfg_text_context
 
     # ── Context management ────────────────────────────────────────────────────
 
@@ -627,6 +573,57 @@ class InterleaveInferencer:
         gen_context['past_key_values'] = past_key_values
         
         return gen_context
+
+    @torch.no_grad()
+    def update_context_image_pair(
+        self,
+        image,
+        gen_context,
+        cfg_text_context,
+        vae=True,
+        vit=True,
+        modality_type=None,
+        do_modality_norm=False,
+    ):
+        """Append one image condition to full and text-free CFG contexts.
+
+        ``update_context_image`` samples the VAE posterior internally. Replay
+        the same Torch RNG state for the text-free cache update so both branches
+        receive an identical image latent, then restore the state left by the
+        first update so this paired operation consumes RNG exactly once overall.
+        """
+        cpu_rng_before = torch.get_rng_state()
+        cuda_rng_before = torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None
+
+        gen_context = self.update_context_image(
+            image,
+            gen_context,
+            vae=vae,
+            vit=vit,
+            modality_type=modality_type,
+            do_modality_norm=do_modality_norm,
+        )
+
+        cpu_rng_after = torch.get_rng_state()
+        cuda_rng_after = torch.cuda.get_rng_state_all() if cuda_rng_before is not None else None
+        torch.set_rng_state(cpu_rng_before)
+        if cuda_rng_before is not None:
+            torch.cuda.set_rng_state_all(cuda_rng_before)
+        try:
+            cfg_text_context = self.update_context_image(
+                image,
+                cfg_text_context,
+                vae=vae,
+                vit=vit,
+                modality_type=modality_type,
+                do_modality_norm=do_modality_norm,
+            )
+        finally:
+            torch.set_rng_state(cpu_rng_after)
+            if cuda_rng_after is not None:
+                torch.cuda.set_rng_state_all(cuda_rng_after)
+
+        return gen_context, cfg_text_context
 
     # ── Low-level generators ──────────────────────────────────────────────────
 
@@ -1099,8 +1096,9 @@ class InterleaveInferencer:
 
                     if use_det_image:
                         det_image = get_det_image(input_term[1], image_shapes)
-                        gen_context = self.update_context_image(det_image, gen_context, modality_type='rgb')
-                        cfg_text_context = deepcopy(gen_context)
+                        gen_context, cfg_text_context = self.update_context_image_pair(
+                            det_image, gen_context, cfg_text_context, modality_type='rgb'
+                        )
 
                     gen_context = self.update_context_text(input_term[0], gen_context, modality_type='text')
                     cfg_img_context = self.update_context_text(input_term[0], cfg_img_context, modality_type='text')
@@ -1111,20 +1109,25 @@ class InterleaveInferencer:
 
             elif isinstance(input_term, Image.Image):
                 if modality_type == "dino" and use_gt_dino_condition:
-                    gen_context = self.update_context_dino_tokens_from_image(input_term, gen_context)
-                    cfg_text_context = deepcopy(gen_context)
+                    gen_context, cfg_text_context = self.update_context_codebook_image_pair(
+                        input_term, modality_type, gen_context, cfg_text_context
+                    )
                 elif modality_type == "dinolocal" and use_gt_dinolocal_condition:
-                    gen_context = self.update_context_dinolocal_tokens_from_image(input_term, gen_context)
-                    cfg_text_context = deepcopy(gen_context)
+                    gen_context, cfg_text_context = self.update_context_codebook_image_pair(
+                        input_term, modality_type, gen_context, cfg_text_context
+                    )
                 elif modality_type == "clip" and use_gt_clip_condition:
-                    gen_context = self.update_context_clip_tokens_from_image(input_term, gen_context)
-                    cfg_text_context = deepcopy(gen_context)
+                    gen_context, cfg_text_context = self.update_context_codebook_image_pair(
+                        input_term, modality_type, gen_context, cfg_text_context
+                    )
                 elif modality_type == "imagebind" and use_gt_imagebind_condition:
-                    gen_context = self.update_context_imagebind_tokens_from_image(input_term, gen_context)
-                    cfg_text_context = deepcopy(gen_context)
+                    gen_context, cfg_text_context = self.update_context_codebook_image_pair(
+                        input_term, modality_type, gen_context, cfg_text_context
+                    )
                 elif modality_type == "imagebindlocal" and use_gt_imagebindlocal_condition:
-                    gen_context = self.update_context_imagebindlocal_tokens_from_image(input_term, gen_context)
-                    cfg_text_context = deepcopy(gen_context)
+                    gen_context, cfg_text_context = self.update_context_codebook_image_pair(
+                        input_term, modality_type, gen_context, cfg_text_context
+                    )
                 elif modality_type == "seg":
                     # Seg-as-condition is trained with a "mask category: {cat}" text
                     # prefix before the mask image (any2any_dataset.py:550). Mirror it
@@ -1139,14 +1142,14 @@ class InterleaveInferencer:
                         modality_type_dict=modality_type_dict,
                     )
                     gen_context = self.update_context_text(prefix, gen_context)
+                    cfg_text_context = self.update_context_text(prefix, cfg_text_context)
                     cfg_img_context = self.update_context_text(prefix, cfg_img_context)
-                    gen_context = self.update_context_image(
-                        seg_img, gen_context,
+                    gen_context, cfg_text_context = self.update_context_image_pair(
+                        seg_img, gen_context, cfg_text_context,
                         vae=need_vae, vit=need_vit,
                         modality_type="seg", do_modality_norm=do_modality_norm,
                     )
                     image_shapes = seg_img.size[::-1]
-                    cfg_text_context = deepcopy(gen_context)
                 else:
                     input_term = self.vae_transform.resize_transform(pil_img2rgb(input_term))
                     need_vae, need_vit = self._inference_conditioning_flags(
@@ -1160,14 +1163,13 @@ class InterleaveInferencer:
                         need_vae = False
                     elif cond_feature_mode == "vae":
                         need_vit = False
-                    gen_context = self.update_context_image(
-                        input_term, gen_context,
+                    gen_context, cfg_text_context = self.update_context_image_pair(
+                        input_term, gen_context, cfg_text_context,
                         vae=need_vae, vit=need_vit,
                         modality_type=modality_type,
                         do_modality_norm=do_modality_norm,
                     )
                     image_shapes = input_term.size[::-1]
-                    cfg_text_context = deepcopy(gen_context)
 
             else:
                 raise ValueError(f"Unsupported input type: {type(input_term)}")
@@ -1562,17 +1564,11 @@ class InterleaveInferencer:
             gen_context = deepcopy(base_context_no_intermediate)
             if seg_cond_prefix is not None:
                 gen_context = self.update_context_text(seg_cond_prefix, gen_context)
-            gen_context = self.update_context_image(
-                inter_img, gen_context,
-                vae=need_vae,
-                modality_type=intermediate_modality,
-                do_modality_norm=do_modality_norm,
-            )
             cfg_text_context = deepcopy(base_cfg_text_context)
             if seg_cond_prefix is not None:
                 cfg_text_context = self.update_context_text(seg_cond_prefix, cfg_text_context)
-            cfg_text_context = self.update_context_image(
-                inter_img, cfg_text_context,
+            gen_context, cfg_text_context = self.update_context_image_pair(
+                inter_img, gen_context, cfg_text_context,
                 vae=need_vae,
                 modality_type=intermediate_modality,
                 do_modality_norm=do_modality_norm,
@@ -1870,13 +1866,8 @@ class InterleaveInferencer:
                                 seg_prefix = f"mask category: {seg_category or 'person'}"
                                 pass2_gen = self.update_context_text(seg_prefix, pass2_gen)
                                 pass2_cfg_text = self.update_context_text(seg_prefix, pass2_cfg_text)
-                            pass2_gen = self.update_context_image(
-                                mirror_img, pass2_gen,
-                                vae=False, modality_type=inter_mod,
-                                do_modality_norm=do_modality_norm,
-                            )
-                            pass2_cfg_text = self.update_context_image(
-                                mirror_img, pass2_cfg_text,
+                            pass2_gen, pass2_cfg_text = self.update_context_image_pair(
+                                mirror_img, pass2_gen, pass2_cfg_text,
                                 vae=False, modality_type=inter_mod,
                                 do_modality_norm=do_modality_norm,
                             )
