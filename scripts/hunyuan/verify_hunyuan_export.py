@@ -10,7 +10,7 @@ from pathlib import Path
 import torch
 from safetensors import safe_open
 
-from scripts.release.export_hunyuan_checkpoint import (
+from scripts.hunyuan.export_hunyuan_checkpoint import (
     PACKED_SUFFIXES,
     PREFIX,
     _list_shards,
