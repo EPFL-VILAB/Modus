@@ -1,0 +1,22 @@
+# Inference profile for the released MODUS-Hunyuan checkpoint.
+# Loaded on top of base.yaml only when ``--backend hunyuan`` is selected.
+
+format: hf
+model_name: hunyuan_image_3
+model_path: ${oc.env:MODUS_HUNYUAN_CHECKPOINT,models/modus-hunyuan}
+checkpoint_path: null
+use_ema: true
+train_config_path: conf/inference/hunyuan_model.yaml
+
+# The exported checkpoint carries the exact registry used for training.  Leave
+# this null so the loader uses that embedded copy and cannot drift from it.
+modality_config: null
+
+# Stage 2/3 use native-chat serialization with a target instruction, but no
+# separate condition instruction.
+use_instruction: true
+use_target_instruction: true
+use_condition_instruction: false
+use_intermediate_instruction: true
+
+image_size: 1024
